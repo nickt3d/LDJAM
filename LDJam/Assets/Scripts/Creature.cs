@@ -119,7 +119,7 @@ public class Creature : MonoBehaviour
                 
                 if (Vector3.Distance(transform.position, _navMeshAgent.destination) < 0.5f)
                 {
-                    _navMeshAgent.destination = _pickRandomDestinationInBase();
+                    _navMeshAgent.destination = _pickNewRandomDestination();
                 }
                 
                 break;
@@ -185,7 +185,7 @@ public class Creature : MonoBehaviour
                 }
                 
                 _navMeshAgent.stoppingDistance = 0.25f;
-                _navMeshAgent.destination = _pickRandomDestinationInBase();
+                _navMeshAgent.destination = _pickNewRandomDestination();
                 
                 break;
             case CreatureState.Breeding:
@@ -211,26 +211,6 @@ public class Creature : MonoBehaviour
 
         Debug.LogError("No Point Found, Picking new point");
         return _pickNewRandomDestination();
-    }
-
-    private Vector3 _pickRandomDestinationInBase()
-    {
-        var randomAngle = Random.Range(0, 360);
-        var randomDistance = Random.Range(2, _visionRange);
-        var newDirection = Quaternion.Euler(0, randomAngle, 0) * transform.forward;
-        var raycastPoint = transform.position + (newDirection.normalized * randomDistance) + (Vector3.up * 10);
-        Ray ray = new Ray(raycastPoint, new Vector3(0, -1, 0));
-        
-        if (Physics.Raycast(ray, out RaycastHit hit))
-        {
-            if (hit.collider != null)
-            {
-                return hit.point;
-            }
-        }
-
-        Debug.LogError("No Point Found, Picking new point");
-        return _pickRandomDestinationInBase();
     }
 }
 
