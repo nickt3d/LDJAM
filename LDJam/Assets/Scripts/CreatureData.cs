@@ -8,6 +8,7 @@ public class CreatureData : ScriptableObject
     public string CreatureName;
     public BaseType BaseType;
     public SubType SubType;
+    public BaitType BaitNeeded;
     public Mesh Mesh;
 }
 
@@ -20,6 +21,7 @@ public enum BaseType
 
 public enum SubType
 {
+    None,
     Flame,
     Slimy,
     Ghostly

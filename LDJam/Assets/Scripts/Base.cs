@@ -1,18 +1,19 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Base : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    private List<Creature> _creaturesInBase;
 
-    // Update is called once per frame
-    void Update()
+    private void Awake()
     {
-        
+        _creaturesInBase = new();
+    }
+    
+    public void AddCreatureToBase(Creature creature)
+    {
+        _creaturesInBase.Add(creature);
     }
 }
