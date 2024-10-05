@@ -6,6 +6,8 @@ public class BreedingPen : MonoBehaviour, IInteractable
 {
     [SerializeField] private Canvas _interactionCanvas;
 
+    public List<Creature> CreaturesInPen => _creaturesInPen;
+    
     private Base _base;
     private List<Creature> _creaturesInPen;
     
@@ -14,12 +16,14 @@ public class BreedingPen : MonoBehaviour, IInteractable
     {
         _base = FindObjectOfType<Base>();
         _creaturesInPen = new();
+        
+        _interactionCanvas.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        _interactionCanvas.transform.forward = _interactionCanvas.transform.position - Camera.main.ScreenToWorldPoint(new Vector3(Screen.width / 2, Screen.height / 2, 0));
     }
 
     public void AddCreatureToPen(Creature creature)
@@ -35,9 +39,23 @@ public class BreedingPen : MonoBehaviour, IInteractable
         }
     }
 
+    public void TransferCreatureToBase(Creature creature)
+    {
+        if (_creaturesInPen.Contains(creature))
+        {
+            _base.AddCreatureToBase(creature);
+            _creaturesInPen.Remove(creature);
+            creature.SetState(CreatureState.RoamBase);
+        }
+        else
+        {
+            Debug.Log("Can't Transfer a Creature that isn't in this pen");
+        }
+    }
+
     public void Interact()
     {
-        //TODO: Open a menu to pick which creatures are in the pen
+        UIManager.Instance.OpenBreedingUI(this);
     }
 
     public void ShowInteractUI(bool showUI)
@@ -61,4 +79,6 @@ public class BreedingPen : MonoBehaviour, IInteractable
             ShowInteractUI(false);
         }
     }
+    
+    
 }

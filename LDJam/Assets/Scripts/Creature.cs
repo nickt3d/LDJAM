@@ -64,16 +64,6 @@ public class Creature : MonoBehaviour, IInteractable
     {
         _interactionCanvas.transform.forward = _interactionCanvas.transform.position - Camera.main.ScreenToWorldPoint(new Vector3(Screen.width / 2, Screen.height / 2, 0));
         
-        //TEMP//
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            if (_currentState == CreatureState.Untamed)
-            {
-                SetState(CreatureState.FollowPlayer);
-            }
-        }
-        ////////
-        
         if (_currentState == CreatureState.FollowPlayer)
         {
             if (NavMesh.SamplePosition(_navMeshAgent.transform.position, out NavMeshHit hit, 1.0f, NavMesh.AllAreas))
@@ -203,6 +193,9 @@ public class Creature : MonoBehaviour, IInteractable
                 
                 break;
             case CreatureState.Breeding:
+                
+                print("Breeding now");
+                
                 break;
         }
     }

@@ -7,11 +7,13 @@ using UnityEngine;
 public class UIManager : MonoBehaviour
 {
     [SerializeField] private CreatureNameUI _creatureNameUI;
+    [SerializeField] private BreedingUI _breedingUI;
     
     public static UIManager Instance { get; private set; }
 
     private StarterAssetsInputs _starterAssetsInputs;
     private CreatureNameUI _creatureNameUIInstance;
+    private BreedingUI _breedingUIInstance;
     
     private void Awake()
     {
@@ -40,6 +42,17 @@ public class UIManager : MonoBehaviour
         _creatureNameUIInstance.OnMenuClose += _onCreatureNameUIClose;
     }
 
+    public void OpenBreedingUI(BreedingPen pen)
+    {
+        _starterAssetsInputs.SetCursorState(false);
+        _starterAssetsInputs.SetCursorInputForLook(false);
+
+        _breedingUIInstance = Instantiate(_breedingUI, transform);
+        _breedingUIInstance.Init(pen);
+
+        _breedingUIInstance.OnMenuClose += _onBreedingUIClose;
+    }
+
     private void _onCreatureNameUIClose()
     {
         _creatureNameUIInstance.OnMenuClose -= _onCreatureNameUIClose;
@@ -49,9 +62,17 @@ public class UIManager : MonoBehaviour
         _creatureNameUIInstance = null;
     }
 
+    private void _onBreedingUIClose()
+    {
+        _breedingUIInstance.OnMenuClose -= _onBreedingUIClose;
+        
+        _starterAssetsInputs.SetCursorState(true);
+        _starterAssetsInputs.SetCursorInputForLook(true);
+        _breedingUIInstance = null;
+    }
+
     public bool IsMenuOpen()
     {
-        //TODO: Add the other ui menu into this when it exists
-        return _creatureNameUIInstance != null;
+        return _creatureNameUIInstance != null && _breedingUIInstance != null;
     }
 }

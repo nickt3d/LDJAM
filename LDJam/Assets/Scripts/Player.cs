@@ -45,7 +45,10 @@ public class Player : MonoBehaviour
 
     private void _interact()
     {
-        _closestInteractable.GetComponent<IInteractable>().Interact();
+        if (_closestInteractable != null)
+        {
+            _closestInteractable.GetComponent<IInteractable>().Interact();
+        }
     }
 
     private void _updateInteractUI()
