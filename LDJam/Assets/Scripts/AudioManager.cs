@@ -1,18 +1,60 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class AudioManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public static AudioManager instance;
+
+    public Sound[] musicSounds, sfxSounds;
+    public AudioSource musicSource, sfxSource;
+
+    private void Awake()
     {
-        
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        
+        PlayMusic("Title Theme");
+    }
+
+    public void PlayMusic(string  name)
+    {
+        Sound s = Array.Find(musicSounds, x=> x.soundName == name);
+
+        if (s == null)
+        {
+            Debug.Log("Music Not Found");
+        }
+        else
+        {
+            musicSource.clip = s.clip;
+            musicSource.Play();
+        }
+    }
+
+    public void PlaySFX(string name)
+    {
+        Sound s = Array.Find(sfxSounds, x => x.soundName == name);
+
+        if (s == null)
+        {
+            Debug.Log("SFX Not Found");
+        }
+        else
+        {
+            sfxSource.clip = s.clip;
+            sfxSource.Play();
+        }
     }
 }
