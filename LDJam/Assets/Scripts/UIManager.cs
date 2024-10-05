@@ -33,24 +33,30 @@ public class UIManager : MonoBehaviour
 
     public void OpenCreatureNameUI(Creature creature)
     {
-        _starterAssetsInputs.SetCursorState(false);
-        _starterAssetsInputs.SetCursorInputForLook(false);
-        
-        _creatureNameUIInstance = Instantiate(_creatureNameUI, transform);
-        _creatureNameUIInstance.Init(creature);
+        if (_creatureNameUIInstance == null)
+        {
+            _starterAssetsInputs.SetCursorState(false);
+            _starterAssetsInputs.SetCursorInputForLook(false);
 
-        _creatureNameUIInstance.OnMenuClose += _onCreatureNameUIClose;
+            _creatureNameUIInstance = Instantiate(_creatureNameUI, transform);
+            _creatureNameUIInstance.Init(creature);
+
+            _creatureNameUIInstance.OnMenuClose += _onCreatureNameUIClose;
+        }
     }
 
     public void OpenBreedingUI(BreedingPen pen)
     {
-        _starterAssetsInputs.SetCursorState(false);
-        _starterAssetsInputs.SetCursorInputForLook(false);
+        if (_breedingUIInstance == null)
+        {
+            _starterAssetsInputs.SetCursorState(false);
+            _starterAssetsInputs.SetCursorInputForLook(false);
 
-        _breedingUIInstance = Instantiate(_breedingUI, transform);
-        _breedingUIInstance.Init(pen);
+            _breedingUIInstance = Instantiate(_breedingUI, transform);
+            _breedingUIInstance.Init(pen);
 
-        _breedingUIInstance.OnMenuClose += _onBreedingUIClose;
+            _breedingUIInstance.OnMenuClose += _onBreedingUIClose;
+        }
     }
 
     private void _onCreatureNameUIClose()

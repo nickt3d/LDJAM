@@ -10,9 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 780abb398732b4848a870c3fc4131ecd, type: 3}
-  m_Name: Creature
+  m_Name: Bouldy_Ghostly
   m_EditorClassIdentifier: 
-  CreatureName: Mama
-  BaseType: 0
-  SubType: 0
+  DefaultName: Bouldy
+  BaseType: 1
+  SubType: 3
+  BaitNeeded: 2
   Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}

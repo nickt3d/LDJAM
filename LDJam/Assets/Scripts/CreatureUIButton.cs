@@ -50,6 +50,15 @@ public class CreatureUIButton : MonoBehaviour
     public void SetAttachedCreature(Creature creature)
     {
         AttachedCreature = creature;
+        
+        if (AttachedCreature != null)
+        {
+            _buttonText.text = AttachedCreature.CurrentName;
+        }
+        else
+        {
+            _buttonText.text = "Empty";
+        }
     }
 
     private void _onButtonPressed()

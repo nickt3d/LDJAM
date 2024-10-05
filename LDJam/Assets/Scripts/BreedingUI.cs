@@ -21,6 +21,8 @@ public class BreedingUI : MonoBehaviour
 
     private void Awake()
     {
+        _base = FindObjectOfType<Base>();
+        
         _closeButton.onClick.AddListener(_onClosePressed);
     }
 
@@ -28,21 +30,19 @@ public class BreedingUI : MonoBehaviour
     {
         _breedingPen = pen;
 
-        if (pen.CreaturesInPen[0] == null)
+        if (pen.CreaturesInPen.Count == 0)
         {
             _penButton1.Init(CreatureButtonState.InBreedingPen, null);
-        }
-        else
-        {
-            _penButton1.Init(CreatureButtonState.InBreedingPen, pen.CreaturesInPen[0]);
-        }
-        
-        if (pen.CreaturesInPen[1] == null)
-        {
             _penButton2.Init(CreatureButtonState.InBreedingPen, null);
         }
-        else
+        else if (pen.CreaturesInPen.Count == 1)
         {
+            _penButton1.Init(CreatureButtonState.InBreedingPen, pen.CreaturesInPen[0]);
+            _penButton2.Init(CreatureButtonState.InBreedingPen, null);
+        }
+        else if (pen.CreaturesInPen.Count == 2)
+        {
+            _penButton1.Init(CreatureButtonState.InBreedingPen, pen.CreaturesInPen[0]);
             _penButton2.Init(CreatureButtonState.InBreedingPen, pen.CreaturesInPen[1]);
         }
 
@@ -84,6 +84,7 @@ public class BreedingUI : MonoBehaviour
             
             var newBaseButton = Instantiate(_creatureButtonPrefab, _baseParent);
             newBaseButton.Init(CreatureButtonState.InBase, button.AttachedCreature);
+            newBaseButton.OnButtonPressed += _onBaseButtonPressed;
             
             button.SetAttachedCreature(null);
         }
@@ -105,11 +106,12 @@ public class BreedingUI : MonoBehaviour
         }
         else
         {
-            _base.TransferCreatureToBreedingPen(button.AttachedCreature, _breedingPen);
             _breedingPen.TransferCreatureToBase(_penButton1.AttachedCreature);
+            _base.TransferCreatureToBreedingPen(button.AttachedCreature, _breedingPen);
             
             var newBaseButton = Instantiate(_creatureButtonPrefab, _baseParent);
             newBaseButton.Init(CreatureButtonState.InBase, _penButton1.AttachedCreature);
+            newBaseButton.OnButtonPressed += _onBaseButtonPressed;
             
             _penButton1.SetAttachedCreature(button.AttachedCreature);
             Destroy(button.gameObject);

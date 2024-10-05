@@ -15,7 +15,8 @@ public class Player : MonoBehaviour
 
     public Dictionary<BaitType, int> BaitInventory => _baitInventory;
 
-    public const float NORMAL_CATCH_RATE = 30;
+    //TODO: change back to 30
+    public const float NORMAL_CATCH_RATE = 100;
     public const float TYPE_CATCH_RATE = 70;
 
     private void Awake()

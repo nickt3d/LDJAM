@@ -34,6 +34,8 @@ public class CreatureNameUI : MonoBehaviour
     private void _onConfirmClicked()
     {
         _creature.SetName(_inputfield.text);
+        
+        _onCloseClicked();
     }
 
     private void _onCloseClicked()
