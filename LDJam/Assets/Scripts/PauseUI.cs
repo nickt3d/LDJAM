@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public class Munchkinpedia : MonoBehaviour
+public class PauseUI : MonoBehaviour
 {
     public Action OnMenuClose;
 
@@ -16,9 +16,19 @@ public class Munchkinpedia : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (Input.GetKeyDown(KeyCode.P))
         {
             _onCloseClicked();
-        }    
+        }
+    }
+
+    public void ResumeGame()
+    {
+        _onCloseClicked();
+    }
+
+    public void ExitGame()
+    {
+        Application.Quit();
     }
 }

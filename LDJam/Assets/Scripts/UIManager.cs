@@ -9,6 +9,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private CreatureNameUI _creatureNameUI;
     [SerializeField] private BreedingUI _breedingUI;
     [SerializeField] private Munchkinpedia _munchkinpediaUI;
+    [SerializeField] private PauseUI _pauseUI;
     
     public static UIManager Instance { get; private set; }
 
@@ -16,6 +17,7 @@ public class UIManager : MonoBehaviour
     private CreatureNameUI _creatureNameUIInstance;
     private BreedingUI _breedingUIInstance;
     private Munchkinpedia _munchkinpediaUIInstance;
+    private PauseUI _pauseUIInstance;
     
     private void Awake()
     {
@@ -53,11 +55,21 @@ public class UIManager : MonoBehaviour
             {
                 Destroy(_munchkinpediaUI.gameObject);            
             }
+
+            if (_pauseUI != null)
+            {
+                Destroy(_pauseUI.gameObject);
+            }
         }
 
         if (Input.GetKeyDown(KeyCode.Q))
         {
             OpenMunchkinpediaUI();
+        }
+
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            OpenPauseUI();
         }
     }
 
@@ -102,6 +114,19 @@ public class UIManager : MonoBehaviour
         }
     }
 
+    private void OpenPauseUI()
+    {
+        if (_pauseUIInstance == null)
+        {
+            _starterAssetsInputs.SetCursorState(false);
+            _starterAssetsInputs.SetCursorInputForLook(false);
+
+            _pauseUIInstance = Instantiate(_pauseUI, transform);
+
+            _pauseUIInstance.OnMenuClose += _onPauseUIClose;
+        }
+    }
+
     private void _onCreatureNameUIClose()
     {
         _creatureNameUIInstance.OnMenuClose -= _onCreatureNameUIClose;
@@ -126,6 +151,14 @@ public class UIManager : MonoBehaviour
         _onMenuClose();
     }
 
+    private void _onPauseUIClose()
+    {
+        _pauseUIInstance.OnMenuClose -= _onPauseUIClose;
+        _pauseUIInstance = null;
+
+        _onMenuClose();
+    }
+
     private void _onMenuClose()
     {
         _starterAssetsInputs.SetCursorState(true);
@@ -135,6 +168,6 @@ public class UIManager : MonoBehaviour
     public bool IsMenuOpen()
     {
         return _creatureNameUIInstance != null || _breedingUIInstance != null
-            || _munchkinpediaUIInstance != null;
+            || _munchkinpediaUIInstance != null || _pauseUIInstance != null;
     }
 }
