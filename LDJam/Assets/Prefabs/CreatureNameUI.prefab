@@ -51,6 +51,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _inputfield: {fileID: 8518493677038561156}
+  _nameText: {fileID: 6893244916846201315}
   _confirmButton: {fileID: 2234067084554181562}
   _closebutton: {fileID: 3782865667129903409}
 --- !u!1 &572365656195154887
@@ -119,7 +120,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Enter Name...
+  m_text: Enter New Name...
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -990,7 +991,7 @@ GameObject:
   - component: {fileID: 1698198044179531271}
   - component: {fileID: 6893244916846201315}
   m_Layer: 5
-  m_Name: Text
+  m_Name: NameText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

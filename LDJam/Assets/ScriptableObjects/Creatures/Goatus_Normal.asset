@@ -16,4 +16,7 @@ MonoBehaviour:
   BaseType: 1
   SubType: 0
   BaitNeeded: 2
+  TamingReward:
+    PossibleBaitDrops: 02000000
+    AmountRange: {x: 2, y: 4}
   Mesh: {fileID: 6239881831769578202, guid: dd3057c188f2870468fb070c31de2acf, type: 3}

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,7 +11,15 @@ public class CreatureData : ScriptableObject
     public BaseType BaseType;
     public SubType SubType;
     public BaitType BaitNeeded;
+    public TamingReward TamingReward;
     public Mesh Mesh;
+}
+
+[Serializable]
+public class TamingReward
+{
+    public List<BaitType> PossibleBaitDrops;
+    public Vector2 AmountRange;
 }
 
 public enum BaseType

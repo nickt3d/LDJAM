@@ -12,8 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 780abb398732b4848a870c3fc4131ecd, type: 3}
   m_Name: Bouldy_Ghostly
   m_EditorClassIdentifier: 
-  DefaultName: Bouldy
+  CreatureName: 0
   BaseType: 1
   SubType: 3
   BaitNeeded: 2
+  TamingReward:
+    PossibleBaitDrops: 02000000
+    AmountRange: {x: 2, y: 4}
   Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}

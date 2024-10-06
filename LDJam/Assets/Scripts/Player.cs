@@ -110,24 +110,39 @@ public class Player : MonoBehaviour
         {
             if (randomRoll <= NORMAL_CATCH_RATE)
             {
-                print("Caught a Creature with Normal bait");
                 creature.SetState(CreatureState.FollowPlayer);
+
+                var tamingRewards = creature.CreatureData.TamingReward;
+                
+                var baitDropIndex = Random.Range(0, tamingRewards.PossibleBaitDrops.Count);
+                var randomCount = Random.Range((int)tamingRewards.AmountRange.x, (int)tamingRewards.AmountRange.y + 1);
+
+                _baitInventory[tamingRewards.PossibleBaitDrops[baitDropIndex]] += randomCount;
+                print($"Gained {randomCount} {tamingRewards.PossibleBaitDrops[baitDropIndex]} Bait!");
             }
             else
             {
-                print("Catch Failed");
+                print("Tame Failed");
             }
         }
         else
         {
             if (randomRoll <= TYPE_CATCH_RATE)
             {
-                print("Caught a creature with special bait");
+                print($"Caught a creature with {baitType} bait");
                 creature.SetState(CreatureState.FollowPlayer);
+                
+                var tamingRewards = creature.CreatureData.TamingReward;
+                
+                var baitDropIndex = Random.Range(0, tamingRewards.PossibleBaitDrops.Count);
+                var randomCount = Random.Range((int)tamingRewards.AmountRange.x, (int)tamingRewards.AmountRange.y + 1);
+
+                _baitInventory[tamingRewards.PossibleBaitDrops[baitDropIndex]] += randomCount;
+                print($"Gained {randomCount} {tamingRewards.PossibleBaitDrops[baitDropIndex]} Bait!");
             }
             else
             {
-                print("Catch Failed");
+                print("Tame Failed");
             }
         }
     }

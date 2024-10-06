@@ -23,7 +23,10 @@ namespace StarterAssets
 #if ENABLE_INPUT_SYSTEM
 		public void OnMove(InputValue value)
 		{
-			MoveInput(value.Get<Vector2>());
+			if (!UIManager.Instance.IsMenuOpen())
+			{
+				MoveInput(value.Get<Vector2>());
+			}
 		}
 
 		public void OnLook(InputValue value)
@@ -31,6 +34,10 @@ namespace StarterAssets
 			if(cursorInputForLook)
 			{
 				LookInput(value.Get<Vector2>());
+			}
+			else
+			{
+				LookInput(Vector2.zero);
 			}
 		}
 
