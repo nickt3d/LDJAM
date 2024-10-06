@@ -5,8 +5,8 @@ using UnityEngine.Serialization;
 
 [CreateAssetMenu(fileName = "CreatureData", menuName = "CreatureData")]
 public class CreatureData : ScriptableObject
-{
-    public string DefaultName;
+{ 
+    public CreatureName CreatureName;
     public BaseType BaseType;
     public SubType SubType;
     public BaitType BaitNeeded;
@@ -26,4 +26,19 @@ public enum SubType
     Flame,
     Slimy,
     Ghostly
+}
+
+public enum CreatureName
+{
+    Bouldy,
+    Gremchilla,
+    Ghebble,
+    Litkit,
+    Beer,
+    Snozz,
+    Grouse,
+    Frosgeist,
+    Vomoth,
+    Flopper,
+    Goatus
 }

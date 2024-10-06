@@ -190,7 +190,7 @@ PrefabInstance:
         type: 3}
       propertyPath: _creatureData
       value: 
-      objectReference: {fileID: 11400000, guid: eeee6bb4c0b2ba444bf266e264276898,
+      objectReference: {fileID: 11400000, guid: 5219354c927ede94abdf7c17095e928d,
         type: 2}
     - target: {fileID: 7974851456305561250, guid: 158ef524f08f699418621c112eba2067,
         type: 3}
@@ -8850,7 +8850,7 @@ PrefabInstance:
         type: 3}
       propertyPath: _creatureData
       value: 
-      objectReference: {fileID: 11400000, guid: 27ceac58b82b5574c8bb505d10b73472,
+      objectReference: {fileID: 11400000, guid: 1badd418a9847b44299b8af48378f6d2,
         type: 2}
     - target: {fileID: 7974851456305561250, guid: 158ef524f08f699418621c112eba2067,
         type: 3}
@@ -12353,7 +12353,7 @@ MonoBehaviour:
   m_Center: {x: 0, y: 2, z: 0}
   m_LayerMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 55
   m_UseGeometry: 0
   m_DefaultArea: 0
   m_GenerateLinks: 0

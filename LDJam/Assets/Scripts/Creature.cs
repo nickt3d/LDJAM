@@ -13,6 +13,8 @@ public class Creature : MonoBehaviour, IInteractable
     [SerializeField] private CreatureData _creatureData;
 
     public string CurrentName => _currentName;
+    public CreatureState CurrentState => _currentState;
+    public CreatureData CreatureData => _creatureData;
     
     private static readonly string AREA_WALKABLE = "Walkable";
     private static readonly string AREA_BASE = "Base";
@@ -35,23 +37,36 @@ public class Creature : MonoBehaviour, IInteractable
         { 2, "Jump" },
         { 3, AREA_BASE }
     };
-    
-    // Start is called before the first frame update
-    void Start()
+
+    private void Awake()
     {
         _navMeshAgent = GetComponent<NavMeshAgent>();
         _collider = GetComponent<Collider>();
         _mesh = GetComponent<MeshFilter>();
         _player = FindObjectOfType<Player>();
         _base = FindObjectOfType<Base>();
-        
+    }
+
+    // Start is called before the first frame update
+    void Start()
+    {
         _currentState = CreatureState.Untamed;
         _interactionCanvas.gameObject.SetActive(false);
+        
+        //TEMP//
+        _currentName = _creatureData.CreatureName.ToString();
+
+        if (_creatureData.Mesh != null)
+        {
+            _mesh.mesh = _creatureData.Mesh;
+        }
+        ////
     }
     
     public void Init(CreatureData data)
     {
         _creatureData = data;
+        _currentName = data.CreatureName.ToString();
 
         if (data.Mesh != null)
         {
@@ -165,12 +180,14 @@ public class Creature : MonoBehaviour, IInteractable
         {
             case CreatureState.Untamed:
 
+                _navMeshAgent.speed = 3.5f;
                 _navMeshAgent.destination = _pickNewRandomDestination();
                 _navMeshAgent.stoppingDistance = 0.1f;
                 
                 break;
             case CreatureState.FollowPlayer:
 
+                _navMeshAgent.speed = 5;
                 _navMeshAgent.destination = _player.transform.position;
                 _navMeshAgent.stoppingDistance = 4;
                 
@@ -178,7 +195,7 @@ public class Creature : MonoBehaviour, IInteractable
             case CreatureState.RoamBase:
 
                 string areaToRemove = AREA_WALKABLE;
-
+                
                 var areaIndex = NavMesh.GetAreaFromName(areaToRemove);
 
                 if (areaIndex != -1)
@@ -188,13 +205,14 @@ public class Creature : MonoBehaviour, IInteractable
                     _navMeshAgent.areaMask &= ~areaMaskToRemove;
                 }
                 
+                _navMeshAgent.speed = 3.5f;
                 _navMeshAgent.stoppingDistance = 0.25f;
                 _navMeshAgent.destination = _pickNewRandomDestination();
                 
                 break;
             case CreatureState.Breeding:
-                
-                print("Breeding now");
+
+                _navMeshAgent.speed = 0;
                 
                 break;
         }
@@ -233,6 +251,10 @@ public class Creature : MonoBehaviour, IInteractable
                 _player.UseBait(this, BaitType.Normal);
             }
         }
+        else if (_currentState == CreatureState.Breeding)
+        {
+            //Do Nothing
+        }
         else
         {
             UIManager.Instance.OpenCreatureNameUI(this);
@@ -241,6 +263,11 @@ public class Creature : MonoBehaviour, IInteractable
 
     public void ShowInteractUI(bool showUI)
     {
+        if (_currentState == CreatureState.Breeding)
+        {
+            showUI = false;
+        }
+        
         _interactionCanvas.gameObject.SetActive(showUI);
 
         if (showUI)

@@ -252,7 +252,7 @@ GameObject:
   - component: {fileID: 3315801214640041760}
   - component: {fileID: 5820374263315936176}
   - component: {fileID: 9214403955270382937}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Breeding Pen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -340,7 +340,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -359,6 +359,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _interactionCanvas: {fileID: 3485926609870362518}
+  _creaturePrefab: {fileID: 3431408230189972230, guid: 158ef524f08f699418621c112eba2067,
+    type: 3}
+  _baseBreedingTime: 30
 --- !u!54 &9214403955270382937
 Rigidbody:
   m_ObjectHideFlags: 0

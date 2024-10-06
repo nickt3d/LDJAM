@@ -26,6 +26,7 @@ public class Base : MonoBehaviour
             pen.AddCreatureToPen(creature);
             _creaturesInBase.Remove(creature);
             creature.SetState(CreatureState.Breeding);
+            creature.transform.position = pen.transform.position + Vector3.up * 5;
         }
         else
         {

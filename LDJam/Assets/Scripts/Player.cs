@@ -78,6 +78,15 @@ public class Player : MonoBehaviour
 
     public void AddInteractableToList(GameObject interactable)
     {
+        //Don't add to list if breeding
+        if (interactable.TryGetComponent(out Creature creature))
+        {
+            if (creature.CurrentState == CreatureState.Breeding)
+            {
+                return;
+            }
+        }
+        
         if (!_interactablesInRange.Contains(interactable))
         {
             _interactablesInRange.Add(interactable);
