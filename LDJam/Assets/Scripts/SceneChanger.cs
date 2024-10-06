@@ -26,6 +26,10 @@ public class SceneChanger : MonoBehaviour
     {
         if (Input.anyKeyDown)
         {
+            AudioManager.instance.musicSource.Stop();
+            AudioManager.instance.PlaySFX("Select");
+            AudioManager.instance.PlayMusic("Game Theme");
+           
             LoadGameScene();
         }
     }
