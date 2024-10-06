@@ -1,33 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class Munchkinpedia : MonoBehaviour
 {
-    [SerializeField] GameObject munchkinpediaObj;
-    bool toggleMunchkinpedia;
+    public Action OnMenuClose;
 
-    // Start is called before the first frame update
-    void Start()
+    private void _onCloseClicked()
     {
-        munchkinpediaObj.SetActive(false);
+        OnMenuClose?.Invoke();
+
+        Destroy(gameObject);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.B))
+        if (Input.GetKeyDown(KeyCode.Q))
         {
-            toggleMunchkinpedia = !toggleMunchkinpedia;
-        }
-
-        if (toggleMunchkinpedia)
-        {
-            munchkinpediaObj.SetActive(true);
-        }
-        else if (!toggleMunchkinpedia)
-        {
-            munchkinpediaObj.SetActive(false);
-        }
+            _onCloseClicked();
+        }    
     }
 }
