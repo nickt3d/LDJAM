@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 780abb398732b4848a870c3fc4131ecd, type: 3}
-  m_Name: Goatus_Flame
+  m_Name: Ghebble_Slimy
   m_EditorClassIdentifier: 
-  CreatureName: 10
-  BaseType: 1
+  CreatureName: 2
+  BaseType: 2
   SubType: 1
-  BaitNeeded: 2
+  BaitNeeded: 3
   TamingReward:
-    PossibleBaitDrops: 02000000
+    PossibleBaitDrops: 03000000
     AmountRange: {x: 2, y: 4}
-  Model: {fileID: 7803840696213403682, guid: 4b2deef88df15eb47aa81af2db59ffff, type: 3}
+  Model: {fileID: 71931145062080660, guid: 2d0e188771791df4ab2247ecee6d0222, type: 3}

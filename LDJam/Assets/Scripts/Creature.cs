@@ -53,14 +53,8 @@ public class Creature : MonoBehaviour, IInteractable
         _currentState = CreatureState.Untamed;
         _interactionCanvas.gameObject.SetActive(false);
         
-        //TEMP//
-        _currentName = _creatureData.CreatureName.ToString();
-
-        if (_creatureData.Mesh != null)
-        {
-            _mesh.mesh = _creatureData.Mesh;
-        }
-        ////
+        //TEMP
+        Init(_creatureData);
     }
     
     public void Init(CreatureData data)
@@ -68,10 +62,7 @@ public class Creature : MonoBehaviour, IInteractable
         _creatureData = data;
         _currentName = data.CreatureName.ToString();
 
-        if (data.Mesh != null)
-        {
-            _mesh.mesh = data.Mesh;
-        }
+        var creatureModel = Instantiate(data.Model, Vector3.zero, Quaternion.identity, transform);
     }
 
     // Update is called once per frame
