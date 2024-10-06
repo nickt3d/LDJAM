@@ -1,18 +1,36 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Base : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    private List<Creature> _creaturesInBase;
 
-    // Update is called once per frame
-    void Update()
+    public List<Creature> CreaturesInBase => _creaturesInBase;
+
+    private void Awake()
     {
-        
+        _creaturesInBase = new();
+    }
+    
+    public void AddCreatureToBase(Creature creature)
+    {
+        _creaturesInBase.Add(creature);
+    }
+    
+    public void TransferCreatureToBreedingPen(Creature creature, BreedingPen pen)
+    {
+        if (_creaturesInBase.Contains(creature))
+        {
+            pen.AddCreatureToPen(creature);
+            _creaturesInBase.Remove(creature);
+            creature.SetState(CreatureState.Breeding);
+            creature.transform.position = pen.transform.position + Vector3.up * 5;
+        }
+        else
+        {
+            Debug.Log("Can't Transfer a Creature that isn't in your base");
+        }
     }
 }

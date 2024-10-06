@@ -66,12 +66,17 @@ namespace StarterAssets
 			sprint = newSprintState;
 		}
 
+		public void SetCursorInputForLook(bool isOn)
+		{
+			cursorInputForLook = isOn;
+		}
+
 		private void OnApplicationFocus(bool hasFocus)
 		{
 			SetCursorState(cursorLocked);
 		}
 
-		private void SetCursorState(bool newState)
+		public void SetCursorState(bool newState)
 		{
 			Cursor.lockState = newState ? CursorLockMode.Locked : CursorLockMode.None;
 		}

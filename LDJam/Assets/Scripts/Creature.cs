@@ -1,13 +1,20 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.AI;
 using Random = UnityEngine.Random;
 
-public class Creature : MonoBehaviour
+public class Creature : MonoBehaviour, IInteractable
 {
     [SerializeField] private float _visionRange;
+    [SerializeField] private Canvas _interactionCanvas;
+    [SerializeField] private CreatureData _creatureData;
+
+    public string CurrentName => _currentName;
+    public CreatureState CurrentState => _currentState;
+    public CreatureData CreatureData => _creatureData;
     
     private static readonly string AREA_WALKABLE = "Walkable";
     private static readonly string AREA_BASE = "Base";
@@ -18,9 +25,10 @@ public class Creature : MonoBehaviour
     private Player _player;
     private Base _base;
 
-    private CreatureData _creatureData;
+    //private CreatureData _creatureData;
     private CreatureState _currentState;
     private Vector3 _basePosition;
+    private string _currentName;
     
     private Dictionary<int, string> _navMeshAreas = new()
     {
@@ -29,22 +37,36 @@ public class Creature : MonoBehaviour
         { 2, "Jump" },
         { 3, AREA_BASE }
     };
-    
-    // Start is called before the first frame update
-    void Start()
+
+    private void Awake()
     {
         _navMeshAgent = GetComponent<NavMeshAgent>();
         _collider = GetComponent<Collider>();
         _mesh = GetComponent<MeshFilter>();
         _player = FindObjectOfType<Player>();
         _base = FindObjectOfType<Base>();
-        
+    }
+
+    // Start is called before the first frame update
+    void Start()
+    {
         _currentState = CreatureState.Untamed;
+        _interactionCanvas.gameObject.SetActive(false);
+        
+        //TEMP//
+        _currentName = _creatureData.CreatureName.ToString();
+
+        if (_creatureData.Mesh != null)
+        {
+            _mesh.mesh = _creatureData.Mesh;
+        }
+        ////
     }
     
     public void Init(CreatureData data)
     {
         _creatureData = data;
+        _currentName = data.CreatureName.ToString();
 
         if (data.Mesh != null)
         {
@@ -55,27 +77,19 @@ public class Creature : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            if (_currentState == CreatureState.Untamed)
-            {
-                SetState(CreatureState.FollowPlayer);
-            }
-        }
+        _interactionCanvas.transform.forward = _interactionCanvas.transform.position - Camera.main.ScreenToWorldPoint(new Vector3(Screen.width / 2, Screen.height / 2, 0));
         
         if (_currentState == CreatureState.FollowPlayer)
         {
             if (NavMesh.SamplePosition(_navMeshAgent.transform.position, out NavMeshHit hit, 1.0f, NavMesh.AllAreas))
             {
-                // Get the area mask at the sampled position
                 int areaMask = hit.mask;
-
-                // Optionally, convert the area mask to a human-readable name
                 string areaName = GetAreaNameFromMask(areaMask);
 
                 if (areaName.Equals(AREA_BASE))
                 {
                     SetState(CreatureState.RoamBase);
+                    _base.AddCreatureToBase(this);
                 }
             }
         }
@@ -96,6 +110,11 @@ public class Creature : MonoBehaviour
             }
         }
         return "";
+    }
+
+    public void SetName(string name)
+    {
+        _currentName = name;
     }
 
     private void _updateState()
@@ -161,12 +180,14 @@ public class Creature : MonoBehaviour
         {
             case CreatureState.Untamed:
 
+                _navMeshAgent.speed = 3.5f;
                 _navMeshAgent.destination = _pickNewRandomDestination();
                 _navMeshAgent.stoppingDistance = 0.1f;
                 
                 break;
             case CreatureState.FollowPlayer:
 
+                _navMeshAgent.speed = 5;
                 _navMeshAgent.destination = _player.transform.position;
                 _navMeshAgent.stoppingDistance = 4;
                 
@@ -174,7 +195,7 @@ public class Creature : MonoBehaviour
             case CreatureState.RoamBase:
 
                 string areaToRemove = AREA_WALKABLE;
-
+                
                 var areaIndex = NavMesh.GetAreaFromName(areaToRemove);
 
                 if (areaIndex != -1)
@@ -184,11 +205,15 @@ public class Creature : MonoBehaviour
                     _navMeshAgent.areaMask &= ~areaMaskToRemove;
                 }
                 
+                _navMeshAgent.speed = 3.5f;
                 _navMeshAgent.stoppingDistance = 0.25f;
                 _navMeshAgent.destination = _pickNewRandomDestination();
                 
                 break;
             case CreatureState.Breeding:
+
+                _navMeshAgent.speed = 0;
+                
                 break;
         }
     }
@@ -211,6 +236,61 @@ public class Creature : MonoBehaviour
 
         Debug.LogError("No Point Found, Picking new point");
         return _pickNewRandomDestination();
+    }
+
+    public void Interact()
+    {
+        if (_currentState == CreatureState.Untamed)
+        {
+            if (_player.BaitInventory[_creatureData.BaitNeeded] > 0)
+            {
+                _player.UseBait(this, _creatureData.BaitNeeded);
+            }
+            else if (_player.BaitInventory[BaitType.Normal] > 0)
+            {
+                _player.UseBait(this, BaitType.Normal);
+            }
+        }
+        else if (_currentState == CreatureState.Breeding)
+        {
+            //Do Nothing
+        }
+        else
+        {
+            UIManager.Instance.OpenCreatureNameUI(this);
+        }
+    }
+
+    public void ShowInteractUI(bool showUI)
+    {
+        if (_currentState == CreatureState.Breeding)
+        {
+            showUI = false;
+        }
+        
+        _interactionCanvas.gameObject.SetActive(showUI);
+
+        if (showUI)
+        {
+            _interactionCanvas.GetComponentInChildren<TMP_Text>().text = $"{_currentName}\n[E] To Interact";
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.TryGetComponent(out Player player))
+        {
+            player.AddInteractableToList(gameObject);
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.TryGetComponent(out Player player))
+        {
+            player.RemoveInteractableFromList(gameObject);
+            ShowInteractUI(false);
+        }
     }
 }
 
