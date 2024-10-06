@@ -12,7 +12,7 @@ public class CreatureData : ScriptableObject
     public SubType SubType;
     public BaitType BaitNeeded;
     public TamingReward TamingReward;
-    public Mesh Mesh;
+    public GameObject Model;
 }
 
 [Serializable]
@@ -49,5 +49,6 @@ public enum CreatureName
     Frosgeist,
     Vomoth,
     Flopper,
-    Goatus
+    Goatus,
+    Shoggy
 }
