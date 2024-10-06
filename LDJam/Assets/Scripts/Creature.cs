@@ -10,7 +10,7 @@ public class Creature : MonoBehaviour, IInteractable
 {
     [SerializeField] private float _visionRange;
     [SerializeField] private Canvas _interactionCanvas;
-    [SerializeField] private CreatureData _creatureData;
+    //[SerializeField] private CreatureData _creatureData;
 
     public string CurrentName => _currentName;
     public CreatureState CurrentState => _currentState;
@@ -25,7 +25,7 @@ public class Creature : MonoBehaviour, IInteractable
     private Player _player;
     private Base _base;
 
-    //private CreatureData _creatureData;
+    private CreatureData _creatureData;
     private CreatureState _currentState;
     private Vector3 _basePosition;
     private string _currentName;
@@ -52,9 +52,6 @@ public class Creature : MonoBehaviour, IInteractable
     {
         _currentState = CreatureState.Untamed;
         _interactionCanvas.gameObject.SetActive(false);
-        
-        //TEMP
-        Init(_creatureData);
     }
     
     public void Init(CreatureData data)
@@ -62,7 +59,7 @@ public class Creature : MonoBehaviour, IInteractable
         _creatureData = data;
         _currentName = data.CreatureName.ToString();
 
-        var creatureModel = Instantiate(data.Model, Vector3.zero, Quaternion.identity, transform);
+        var creatureModel = Instantiate(data.Model, transform);
     }
 
     // Update is called once per frame
@@ -171,6 +168,17 @@ public class Creature : MonoBehaviour, IInteractable
         {
             case CreatureState.Untamed:
 
+                string areaToRemove = AREA_BASE;
+                
+                var areaIndexBase = NavMesh.GetAreaFromName(areaToRemove);
+
+                if (areaIndexBase != -1)
+                {
+                    int areaMaskToRemove = 1 << areaIndexBase;
+
+                    _navMeshAgent.areaMask &= ~areaMaskToRemove;
+                }
+                
                 _navMeshAgent.speed = 3.5f;
                 _navMeshAgent.destination = _pickNewRandomDestination();
                 _navMeshAgent.stoppingDistance = 0.1f;
@@ -178,16 +186,21 @@ public class Creature : MonoBehaviour, IInteractable
                 break;
             case CreatureState.FollowPlayer:
 
+                string areaToAdd = AREA_BASE;
+                var areaIndexToAdd = NavMesh.GetAreaFromName(areaToAdd);
+
+                _navMeshAgent.areaMask |= (1 << areaIndexToAdd);
+                
                 _navMeshAgent.speed = 5;
                 _navMeshAgent.destination = _player.transform.position;
                 _navMeshAgent.stoppingDistance = 4;
                 
                 break;
             case CreatureState.RoamBase:
-
-                string areaToRemove = AREA_WALKABLE;
                 
-                var areaIndex = NavMesh.GetAreaFromName(areaToRemove);
+                string areaToRemoveWalk = AREA_WALKABLE;
+                
+                var areaIndex = NavMesh.GetAreaFromName(areaToRemoveWalk);
 
                 if (areaIndex != -1)
                 {
@@ -264,6 +277,11 @@ public class Creature : MonoBehaviour, IInteractable
         if (showUI)
         {
             _interactionCanvas.GetComponentInChildren<TMP_Text>().text = $"{_currentName}\n[E] To Interact";
+        }
+        else if (_currentState != CreatureState.Untamed)
+        {
+            _interactionCanvas.gameObject.SetActive(true);
+            _interactionCanvas.GetComponentInChildren<TMP_Text>().text = _currentName;
         }
     }
 

@@ -82,9 +82,16 @@ public class BreedingPen : MonoBehaviour, IInteractable
                 quaternion.identity);
             
             newCreature.Init(selectedCreatureData);
-            newCreature.SetState(CreatureState.RoamBase);
+            newCreature.SetState(CreatureState.FollowPlayer);
             
             _base.AddCreatureToBase(newCreature);
+            
+            TransferCreatureToBase(CreaturesInPen[1]);
+            TransferCreatureToBase(CreaturesInPen[0]);
+        }
+        else
+        {
+            Debug.LogError("No Possible Spawn Found");
         }
     }
 
