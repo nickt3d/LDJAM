@@ -30,6 +30,24 @@ public class UIManager : MonoBehaviour
     {
         _starterAssetsInputs = FindObjectOfType<StarterAssetsInputs>();
     }
+    
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (_creatureNameUIInstance != null)
+            {
+                Destroy(_creatureNameUIInstance.gameObject);
+                _onCreatureNameUIClose();
+            }
+
+            if (_breedingUIInstance != null)
+            {
+                Destroy(_breedingUIInstance.gameObject);
+                _onBreedingUIClose();
+            }
+        }
+    }
 
     public void OpenCreatureNameUI(Creature creature)
     {
@@ -79,6 +97,6 @@ public class UIManager : MonoBehaviour
 
     public bool IsMenuOpen()
     {
-        return _creatureNameUIInstance != null && _breedingUIInstance != null;
+        return _creatureNameUIInstance != null || _breedingUIInstance != null;
     }
 }

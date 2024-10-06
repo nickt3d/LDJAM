@@ -8,6 +8,7 @@ using UnityEngine.UI;
 public class CreatureNameUI : MonoBehaviour
 {
     [SerializeField] private TMP_InputField _inputfield;
+    [SerializeField] private TMP_Text _nameText;
     [SerializeField] private Button _confirmButton;
     [SerializeField] private Button _closebutton;
 
@@ -24,6 +25,7 @@ public class CreatureNameUI : MonoBehaviour
     public void Init(Creature creature)
     {
         _creature = creature;
+        _nameText.text = "Name: " + creature.CurrentName;
     }
 
     private void OnDestroy()
@@ -34,6 +36,7 @@ public class CreatureNameUI : MonoBehaviour
     private void _onConfirmClicked()
     {
         _creature.SetName(_inputfield.text);
+        _nameText.text = "Name: " + _inputfield.text;
         
         _onCloseClicked();
     }
