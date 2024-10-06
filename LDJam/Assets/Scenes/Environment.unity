@@ -6946,6 +6946,10 @@ MonoBehaviour:
     type: 3}
   _breedingUI: {fileID: 2953650797630319778, guid: d9ce2223f9f8b224ab7d61b5916fce46,
     type: 3}
+  _munchkinpediaUI: {fileID: -4340768047809606186, guid: baec04ad0ef814f48aae143657ae1da6,
+    type: 3}
+  _pauseUI: {fileID: 2701049959657480855, guid: 15653774b6ffe4f41b58be6709244b93,
+    type: 3}
 --- !u!1001 &956008115
 PrefabInstance:
   m_ObjectHideFlags: 0
