@@ -8376,7 +8376,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!23 &1076721632
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8436,7 +8436,7 @@ Transform:
   m_GameObject: {fileID: 1076721630}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -227.18, y: 25.5, z: -15.96}
+  m_LocalPosition: {x: -245.54, y: 32.68, z: -20.77}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8457,8 +8457,22 @@ MonoBehaviour:
   _creaturePrefab: {fileID: 3431408230189972230, guid: 158ef524f08f699418621c112eba2067,
     type: 3}
   _possibleSpawns:
+  - {fileID: 11400000, guid: 27ceac58b82b5574c8bb505d10b73472, type: 2}
   - {fileID: 11400000, guid: 459a65ac4e082a741bd580dc12c78abf, type: 2}
+  - {fileID: 11400000, guid: 84aa28aa39e09b844954cea40d738900, type: 2}
+  - {fileID: 11400000, guid: eeee6bb4c0b2ba444bf266e264276898, type: 2}
+  - {fileID: 11400000, guid: fe44c359b4c167446a1897d4e6238ba4, type: 2}
+  - {fileID: 11400000, guid: 713f32f58a5385f4e8dc746ced7912ce, type: 2}
+  - {fileID: 11400000, guid: 1a95b285aa1967248b54aa1c746cdff1, type: 2}
+  - {fileID: 11400000, guid: 40bf8e99426c6a5448c299cf7d7c4244, type: 2}
   - {fileID: 11400000, guid: 5219354c927ede94abdf7c17095e928d, type: 2}
+  - {fileID: 11400000, guid: 54784d3070ed99044b34caee1eb23e71, type: 2}
+  - {fileID: 11400000, guid: 65d4cb331adefec4a934aa04fd03519c, type: 2}
+  - {fileID: 11400000, guid: 1badd418a9847b44299b8af48378f6d2, type: 2}
+  - {fileID: 11400000, guid: 4d3635ce57d46bb459ab3dba03e91122, type: 2}
+  - {fileID: 11400000, guid: ecb1c8b49088b0e47aeb8c42702ed898, type: 2}
+  - {fileID: 11400000, guid: 82ed6196c97b83545b643226e721b538, type: 2}
+  - {fileID: 11400000, guid: 2d77bd59a0bbfb44dbde05886bd8ac64, type: 2}
   _spawnDelay: 5
   _spawnRadius: 3
 --- !u!1001 &1090675793
@@ -16148,6 +16162,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5820374263315936176, guid: a0677b8c871335e40a35898a842d7487,
+        type: 3}
+      propertyPath: _baseBreedingTime
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6192272796161710676, guid: a0677b8c871335e40a35898a842d7487,
         type: 3}
       propertyPath: m_LocalPosition.x
