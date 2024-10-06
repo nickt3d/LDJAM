@@ -8,12 +8,14 @@ public class UIManager : MonoBehaviour
 {
     [SerializeField] private CreatureNameUI _creatureNameUI;
     [SerializeField] private BreedingUI _breedingUI;
+    [SerializeField] private Munchkinpedia _munchkinpediaUI;
     
     public static UIManager Instance { get; private set; }
 
     private StarterAssetsInputs _starterAssetsInputs;
     private CreatureNameUI _creatureNameUIInstance;
     private BreedingUI _breedingUIInstance;
+    private Munchkinpedia _munchkinpediaUIInstance;
     
     private void Awake()
     {
@@ -46,6 +48,16 @@ public class UIManager : MonoBehaviour
                 Destroy(_breedingUIInstance.gameObject);
                 _onBreedingUIClose();
             }
+
+            if (_munchkinpediaUI != null)
+            {
+                Destroy(_munchkinpediaUI.gameObject);            
+            }
+        }
+
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            OpenMunchkinpediaUI();
         }
     }
 
@@ -77,6 +89,19 @@ public class UIManager : MonoBehaviour
         }
     }
 
+    private void OpenMunchkinpediaUI()
+    {
+        if (_munchkinpediaUIInstance == null)
+        {
+            _starterAssetsInputs.SetCursorState(false);
+            _starterAssetsInputs.SetCursorInputForLook(false);
+
+            _munchkinpediaUIInstance = Instantiate(_munchkinpediaUI, transform);
+
+            _munchkinpediaUI.OnMenuClose += _onMunchkinpediaUIClose;
+        }
+    }
+
     private void _onCreatureNameUIClose()
     {
         _creatureNameUIInstance.OnMenuClose -= _onCreatureNameUIClose;
@@ -93,6 +118,14 @@ public class UIManager : MonoBehaviour
         _onMenuClose();
     }
 
+    private void _onMunchkinpediaUIClose()
+    {
+        _munchkinpediaUIInstance.OnMenuClose -= _onMunchkinpediaUIClose;
+        _munchkinpediaUIInstance = null;
+
+        _onMenuClose();
+    }
+
     private void _onMenuClose()
     {
         _starterAssetsInputs.SetCursorState(true);
@@ -101,6 +134,7 @@ public class UIManager : MonoBehaviour
 
     public bool IsMenuOpen()
     {
-        return _creatureNameUIInstance != null || _breedingUIInstance != null;
+        return _creatureNameUIInstance != null || _breedingUIInstance != null
+            || _munchkinpediaUIInstance != null;
     }
 }
