@@ -98,7 +98,7 @@ public class UIManager : MonoBehaviour
 
             _munchkinpediaUIInstance = Instantiate(_munchkinpediaUI, transform);
 
-            _munchkinpediaUI.OnMenuClose += _onMunchkinpediaUIClose;
+            _munchkinpediaUIInstance.OnMenuClose += _onMunchkinpediaUIClose;
         }
     }
 
