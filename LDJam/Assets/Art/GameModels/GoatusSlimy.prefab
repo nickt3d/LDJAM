@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &1985741338292400691
+--- !u!1001 &5009625490668032968
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -26,7 +26,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 183f7ce22b9d972429ed9ca5ca3a0ec4,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.04
+      value: -7.01
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 183f7ce22b9d972429ed9ca5ca3a0ec4,
         type: 3}
@@ -73,13 +73,50 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 183f7ce22b9d972429ed9ca5ca3a0ec4,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6e706eee5e26f284e9cbcd14c719bdd6, type: 2}
     - target: {fileID: 919132149155446097, guid: 183f7ce22b9d972429ed9ca5ca3a0ec4,
         type: 3}
       propertyPath: m_Name
-      value: FireGoatusModel
+      value: GoatusSlimy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 183f7ce22b9d972429ed9ca5ca3a0ec4,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -856241190203166991}
   m_SourcePrefab: {fileID: 100100000, guid: 183f7ce22b9d972429ed9ca5ca3a0ec4, type: 3}
+--- !u!1 &5279531608365313689 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 183f7ce22b9d972429ed9ca5ca3a0ec4,
+    type: 3}
+  m_PrefabInstance: {fileID: 5009625490668032968}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &-856241190203166991
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5279531608365313689}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4758778841710881085, guid: 183f7ce22b9d972429ed9ca5ca3a0ec4, type: 3}

@@ -19,4 +19,4 @@ MonoBehaviour:
   TamingReward:
     PossibleBaitDrops: 02000000
     AmountRange: {x: 2, y: 4}
-  Mesh: {fileID: 6239881831769578202, guid: dd3057c188f2870468fb070c31de2acf, type: 3}
+  Model: {fileID: 5279531608365313689, guid: 7af6d4e7b6d7ec24b9cda204569d99ed, type: 3}

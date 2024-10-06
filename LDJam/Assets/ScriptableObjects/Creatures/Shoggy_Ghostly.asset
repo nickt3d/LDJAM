@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 780abb398732b4848a870c3fc4131ecd, type: 3}
-  m_Name: Goatus_Flame
+  m_Name: Shoggy_Ghostly
   m_EditorClassIdentifier: 
-  CreatureName: 10
-  BaseType: 1
-  SubType: 1
-  BaitNeeded: 2
+  CreatureName: 11
+  BaseType: 0
+  SubType: 3
+  BaitNeeded: 1
   TamingReward:
-    PossibleBaitDrops: 02000000
+    PossibleBaitDrops: 01000000
     AmountRange: {x: 2, y: 4}
-  Model: {fileID: 7803840696213403682, guid: 4b2deef88df15eb47aa81af2db59ffff, type: 3}
+  Model: {fileID: 6127863627760930873, guid: f8394d84fc5308f418487f0decd3f1e3, type: 3}
