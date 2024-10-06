@@ -80,19 +80,23 @@ public class UIManager : MonoBehaviour
     private void _onCreatureNameUIClose()
     {
         _creatureNameUIInstance.OnMenuClose -= _onCreatureNameUIClose;
-        
-        _starterAssetsInputs.SetCursorState(true);
-        _starterAssetsInputs.SetCursorInputForLook(true);
         _creatureNameUIInstance = null;
+        
+        _onMenuClose();
     }
 
     private void _onBreedingUIClose()
     {
         _breedingUIInstance.OnMenuClose -= _onBreedingUIClose;
+        _breedingUIInstance = null;
         
+        _onMenuClose();
+    }
+
+    private void _onMenuClose()
+    {
         _starterAssetsInputs.SetCursorState(true);
         _starterAssetsInputs.SetCursorInputForLook(true);
-        _breedingUIInstance = null;
     }
 
     public bool IsMenuOpen()
