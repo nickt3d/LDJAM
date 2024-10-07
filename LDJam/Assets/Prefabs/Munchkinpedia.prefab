@@ -2779,8 +2779,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41960539b314c9441a94698c53da9515, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttons:
-  - {fileID: 6456508293522485841}
 --- !u!1 &6459127036304700293
 GameObject:
   m_ObjectHideFlags: 0
@@ -3691,6 +3689,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
+      propertyPath: m_Interactable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -3903,6 +3906,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MunchkinEntry (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_Interactable
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
@@ -4160,6 +4168,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MunchkinEntry (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_Interactable
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
@@ -4445,6 +4458,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
+      propertyPath: m_Interactable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -4657,6 +4675,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MunchkinEntry (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_Interactable
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
@@ -4917,6 +4940,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
+      propertyPath: m_Interactable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -5132,6 +5160,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
+      propertyPath: m_Interactable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -5267,18 +5300,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccad9eef92cd0a14495954bf139fed13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &6456508293522485841 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
-    type: 3}
-  m_PrefabInstance: {fileID: 4173679199610006014}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!224 &9096978021518960251 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5176067873094537093, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
@@ -5397,6 +5418,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MunchkinEntry (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_Interactable
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
@@ -5657,6 +5683,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
+      propertyPath: m_Interactable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -5869,6 +5900,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MunchkinEntry (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_Interactable
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
@@ -6129,6 +6165,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
+      propertyPath: m_Interactable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -6386,6 +6427,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
+      propertyPath: m_Interactable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -6598,6 +6644,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MunchkinEntry (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_Interactable
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
@@ -6858,6 +6909,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
+      propertyPath: m_Interactable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -7073,6 +7129,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
+      propertyPath: m_Interactable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -7285,6 +7346,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MunchkinEntry (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_Interactable
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
