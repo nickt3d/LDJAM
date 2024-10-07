@@ -108,7 +108,7 @@ public class Player : MonoBehaviour
         }
     }
 
-    private void TameCreature(CreatureData creature)
+    public void TameCreature(CreatureData creature)
     {
         if (!_tamedCreatureTypes.Contains(creature))
         {
@@ -133,8 +133,6 @@ public class Player : MonoBehaviour
                 var randomCount = Random.Range((int)tamingRewards.AmountRange.x, (int)tamingRewards.AmountRange.y + 1);
 
                 _baitInventory[tamingRewards.PossibleBaitDrops[baitDropIndex]] += randomCount;
-
-                TameCreature(creature.CreatureData);
                 print($"Gained {randomCount} {tamingRewards.PossibleBaitDrops[baitDropIndex]} Bait!");
             }
             else
@@ -155,8 +153,6 @@ public class Player : MonoBehaviour
                 var randomCount = Random.Range((int)tamingRewards.AmountRange.x, (int)tamingRewards.AmountRange.y + 1);
 
                 _baitInventory[tamingRewards.PossibleBaitDrops[baitDropIndex]] += randomCount;
-                
-                TameCreature(creature.CreatureData);
                 print($"Gained {randomCount} {tamingRewards.PossibleBaitDrops[baitDropIndex]} Bait!");
             }
             else

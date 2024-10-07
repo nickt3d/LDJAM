@@ -219,6 +219,7 @@ public class Creature : MonoBehaviour, IInteractable
                 _navMeshAgent.speed = 5;
                 _navMeshAgent.destination = _player.transform.position;
                 _navMeshAgent.stoppingDistance = 4;
+                _player.TameCreature(CreatureData);
                 
                 break;
             case CreatureState.RoamBase:
@@ -307,6 +308,15 @@ public class Creature : MonoBehaviour, IInteractable
         {
             _interactionCanvas.gameObject.SetActive(true);
             _interactionCanvas.GetComponentInChildren<TMP_Text>().text = _currentName;
+        }
+
+        if (_currentState != CreatureState.Untamed)
+        {
+            _interactionCanvas.GetComponentInChildren<TMP_Text>().color = Color.yellow;
+        }
+        else
+        {
+            _interactionCanvas.GetComponentInChildren<TMP_Text>().color = Color.white;
         }
     }
 
