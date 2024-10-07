@@ -20,6 +20,8 @@ MonoBehaviour:
     PossibleBaitDrops: 03000000
     AmountRange: {x: 2, y: 4}
   Model: {fileID: 7922024661590405357, guid: b5931da7d67169140bccd3a35e857b18, type: 3}
+  BaitToSpawn: {fileID: 1556481659126521482, guid: 57d1396f81697864cb9a602d7f67f5e5,
+    type: 3}
   creatureDescription: 'It loves to play hide and seek - especially the hiding part. '
   creatureImage: {fileID: 21300000, guid: 749f6c0345a4d6a44b2439da022644f2, type: 3}
   creatureFavBait: Flower Cupcake
