@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CreatureName: 2
   BaseType: 2
-  SubType: 1
+  SubType: 2
   BaitNeeded: 3
   TamingReward:
     PossibleBaitDrops: 03000000

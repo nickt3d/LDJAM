@@ -40,5 +40,6 @@ public class Spawner : MonoBehaviour
             Quaternion.identity);
         
         newCreature.Init(_possibleSpawns[randomCreatureSelection]);
+        newCreature.SetState(CreatureState.Untamed);
     }
 }

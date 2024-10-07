@@ -50,7 +50,6 @@ public class Creature : MonoBehaviour, IInteractable
     // Start is called before the first frame update
     void Start()
     {
-        _currentState = CreatureState.Untamed;
         _interactionCanvas.gameObject.SetActive(false);
     }
     
@@ -115,6 +114,11 @@ public class Creature : MonoBehaviour, IInteractable
                 {
                     _navMeshAgent.destination = _pickNewRandomDestination();
                 }
+
+                if (_navMeshAgent.velocity.magnitude < 0.01)
+                {
+                    _navMeshAgent.destination = _pickNewRandomDestination();
+                }
                 
                 break;
             case CreatureState.FollowPlayer:
@@ -125,6 +129,11 @@ public class Creature : MonoBehaviour, IInteractable
             case CreatureState.RoamBase:
                 
                 if (Vector3.Distance(transform.position, _navMeshAgent.destination) < 0.5f)
+                {
+                    _navMeshAgent.destination = _pickNewRandomDestination();
+                }
+                
+                if (_navMeshAgent.velocity.magnitude < 0.01)
                 {
                     _navMeshAgent.destination = _pickNewRandomDestination();
                 }
@@ -181,7 +190,7 @@ public class Creature : MonoBehaviour, IInteractable
                 
                 _navMeshAgent.speed = 3.5f;
                 _navMeshAgent.destination = _pickNewRandomDestination();
-                _navMeshAgent.stoppingDistance = 0.1f;
+                _navMeshAgent.stoppingDistance = 1.5f;
                 
                 break;
             case CreatureState.FollowPlayer:
@@ -210,7 +219,7 @@ public class Creature : MonoBehaviour, IInteractable
                 }
                 
                 _navMeshAgent.speed = 3.5f;
-                _navMeshAgent.stoppingDistance = 0.25f;
+                _navMeshAgent.stoppingDistance = 1.5f;
                 _navMeshAgent.destination = _pickNewRandomDestination();
                 
                 break;
