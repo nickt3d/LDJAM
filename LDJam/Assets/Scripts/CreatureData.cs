@@ -15,6 +15,7 @@ public class CreatureData : ScriptableObject
     public BaitType BaitNeeded;
     public TamingReward TamingReward;
     public GameObject Model;
+    public BaitMonoBehaviour BaitToSpawn;
     public string creatureDescription;
     public Sprite creatureImage;
     public string creatureFavBait;

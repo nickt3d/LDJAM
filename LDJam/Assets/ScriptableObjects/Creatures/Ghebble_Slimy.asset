@@ -20,6 +20,8 @@ MonoBehaviour:
     PossibleBaitDrops: 03000000
     AmountRange: {x: 2, y: 4}
   Model: {fileID: 472378110357411459, guid: 39328a4156105274ebd43a54a8af3cdd, type: 3}
+  BaitToSpawn: {fileID: 1556481659126521482, guid: 57d1396f81697864cb9a602d7f67f5e5,
+    type: 3}
   creatureDescription: Its exterior is a glowing bright green. Composed of sticky
     chemicals, it's deemed a floating hazard wherever it goes.
   creatureImage: {fileID: 21300000, guid: f22f45f8249484a419cb704a584c7096, type: 3}

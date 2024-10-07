@@ -20,6 +20,8 @@ MonoBehaviour:
     PossibleBaitDrops: 02000000
     AmountRange: {x: 2, y: 4}
   Model: {fileID: 1441650696721691531, guid: 8f002e166395fab42a201327ed80ecb2, type: 3}
+  BaitToSpawn: {fileID: 5845432782282372607, guid: 15c14c883c261084b8826d69bd431a7d,
+    type: 3}
   creatureDescription: Long exposure to hot rocks caused it's body temperature to
     spike. Coming into contact with it can cause severe burns.
   creatureImage: {fileID: 21300000, guid: 2bba55ecce3e67b468e2b4784d16bc20, type: 3}

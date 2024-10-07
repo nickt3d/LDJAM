@@ -10,7 +10,7 @@ public class Creature : MonoBehaviour, IInteractable
 {
     [SerializeField] private float _visionRange;
     [SerializeField] private Canvas _interactionCanvas;
-    //[SerializeField] private CreatureData _creatureData;
+    [SerializeField] private float _baitSpawnDelay;
 
     public string CurrentName => _currentName;
     public CreatureState CurrentState => _currentState;
@@ -29,6 +29,7 @@ public class Creature : MonoBehaviour, IInteractable
     private CreatureState _currentState;
     private Vector3 _basePosition;
     private string _currentName;
+    private float _elapsedBaitSpawnTime;
     
     private Dictionary<int, string> _navMeshAreas = new()
     {
@@ -137,6 +138,15 @@ public class Creature : MonoBehaviour, IInteractable
                 {
                     _navMeshAgent.destination = _pickNewRandomDestination();
                 }
+
+                if (_elapsedBaitSpawnTime >= _baitSpawnDelay)
+                {
+                    _elapsedBaitSpawnTime = 0;
+                    
+                    _spawnBait();
+                }
+
+                _elapsedBaitSpawnTime += Time.deltaTime;
                 
                 break;
             case CreatureState.Breeding:
@@ -154,6 +164,12 @@ public class Creature : MonoBehaviour, IInteractable
         _currentState = state;
         
         _startState();
+    }
+
+    private void _spawnBait()
+    {
+        var bait = Instantiate(CreatureData.BaitToSpawn, transform.position,
+            CreatureData.BaitToSpawn.transform.rotation);
     }
 
     private void _endState()

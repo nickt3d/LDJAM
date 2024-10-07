@@ -20,6 +20,8 @@ MonoBehaviour:
     PossibleBaitDrops: 02000000
     AmountRange: {x: 2, y: 4}
   Model: {fileID: 3285238461324474726, guid: 0fb5650314a448048a5be1b031dafb7a, type: 3}
+  BaitToSpawn: {fileID: 5845432782282372607, guid: 15c14c883c261084b8826d69bd431a7d,
+    type: 3}
   creatureDescription: Its body is covered in a slimey liquid allowing it to squeeze
     through caves very easily.
   creatureImage: {fileID: 21300000, guid: d1de14e961f3d0048b9b830678c3d9d0, type: 3}
