@@ -12333,7 +12333,7 @@ MonoBehaviour:
   m_VoxelSize: 0.16666667
   m_MinRegionArea: 2
   m_NavMeshData: {fileID: 23800000, guid: a9eca9d54abce4a4d8a50bd461765763, type: 2}
-  m_BuildHeightMesh: 0
+  m_BuildHeightMesh: 1
 --- !u!114 &1672478604
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16162,6 +16162,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 953027657888571836, guid: a0677b8c871335e40a35898a842d7487,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5820374263315936176, guid: a0677b8c871335e40a35898a842d7487,
         type: 3}
       propertyPath: _baseBreedingTime
@@ -16215,6 +16220,11 @@ PrefabInstance:
     - target: {fileID: 6192272796161710676, guid: a0677b8c871335e40a35898a842d7487,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6558233797846571779, guid: a0677b8c871335e40a35898a842d7487,
+        type: 3}
+      propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9115681543733940896, guid: a0677b8c871335e40a35898a842d7487,

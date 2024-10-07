@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Unity.Mathematics;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
 public class BreedingPen : MonoBehaviour, IInteractable
@@ -10,6 +11,8 @@ public class BreedingPen : MonoBehaviour, IInteractable
     [SerializeField] private Canvas _interactionCanvas;
     [SerializeField] private Creature _creaturePrefab;
     [SerializeField] private float _baseBreedingTime;
+    [SerializeField] private Image _progressFill;
+    [SerializeField] private GameObject _progressFillBackground;
 
     private static readonly string CREATURE_FILE_PATH = "Assets/ScriptableObjects/Creatures";
 
@@ -37,10 +40,12 @@ public class BreedingPen : MonoBehaviour, IInteractable
         if (_creaturesInPen.Count < 2)
         {
             _elapsedBreedingTime = 0;
+            _progressFillBackground.SetActive(false);
         }
         else
         {
             _elapsedBreedingTime += Time.deltaTime;
+            _progressFillBackground.SetActive(true);
 
             if (_elapsedBreedingTime >= _baseBreedingTime)
             {
@@ -48,6 +53,8 @@ public class BreedingPen : MonoBehaviour, IInteractable
                 
                 _breedCreatures();
             }
+
+            _progressFill.fillAmount = _elapsedBreedingTime / _baseBreedingTime;
         }
     }
 
@@ -83,8 +90,6 @@ public class BreedingPen : MonoBehaviour, IInteractable
             
             newCreature.Init(selectedCreatureData);
             newCreature.SetState(CreatureState.FollowPlayer);
-            
-            _base.AddCreatureToBase(newCreature);
             
             TransferCreatureToBase(CreaturesInPen[1]);
             TransferCreatureToBase(CreaturesInPen[0]);
@@ -148,6 +153,4 @@ public class BreedingPen : MonoBehaviour, IInteractable
             ShowInteractUI(false);
         }
     }
-    
-    
 }
