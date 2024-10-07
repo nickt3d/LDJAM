@@ -1,9 +1,5 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
-using UnityEngine.InputSystem.iOS;
 using Random = UnityEngine.Random;
 
 public class Player : MonoBehaviour
