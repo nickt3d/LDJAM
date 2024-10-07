@@ -20,6 +20,8 @@ MonoBehaviour:
     PossibleBaitDrops: 01000000
     AmountRange: {x: 2, y: 4}
   Model: {fileID: 4941360909727362593, guid: cd87661d10e9d01439dfb894dfd30c23, type: 3}
+  BaitToSpawn: {fileID: 7236080599672273136, guid: ce0b99cad96862c49b58216cc6478030,
+    type: 3}
   creatureDescription: Its swimming speed is unrivaled, with it being able to go
     at extreme speeds. It is known to cause lots of water related acciedents.
   creatureImage: {fileID: 21300000, guid: 18a43b8ca24729542892c613fad0cd43, type: 3}

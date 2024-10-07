@@ -151,6 +151,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _visionRange: 5
   _interactionCanvas: {fileID: 1779770984074340137}
+  _baitSpawnDelay: 10
 --- !u!195 &7974851456305561250
 NavMeshAgent:
   m_ObjectHideFlags: 0

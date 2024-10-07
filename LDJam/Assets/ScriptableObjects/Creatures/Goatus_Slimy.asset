@@ -20,6 +20,8 @@ MonoBehaviour:
     PossibleBaitDrops: 02000000
     AmountRange: {x: 2, y: 4}
   Model: {fileID: 5279531608365313689, guid: 7af6d4e7b6d7ec24b9cda204569d99ed, type: 3}
+  BaitToSpawn: {fileID: 5845432782282372607, guid: 15c14c883c261084b8826d69bd431a7d,
+    type: 3}
   creatureDescription: Often referred to as a clumsy goat, it no longer has the capability
     to climb mountains due to its slippery hooves.
   creatureImage: {fileID: 21300000, guid: e35d43e795fa3e64aa112b07e7be3f3f, type: 3}
