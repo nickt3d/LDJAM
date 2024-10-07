@@ -23,3 +23,4 @@ MonoBehaviour:
   creatureDescription: It blends in with the dark and lurks in the shadows for its
     next meal. Nothing can escape its powerful jaws.
   creatureImage: {fileID: 21300000, guid: 9a7bb7d6c8f6d6d4cb06b558948846b1, type: 3}
+  creatureFavBait: Dewdrop Cupcake

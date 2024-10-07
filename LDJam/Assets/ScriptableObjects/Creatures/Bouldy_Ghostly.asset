@@ -23,3 +23,4 @@ MonoBehaviour:
   creatureDescription: When the rocks deteriorate and break, it enters the afterlife
     in search of new rocks to reform again.
   creatureImage: {fileID: 21300000, guid: e415ac491699b194389b4be5d122aa86, type: 3}
+  creatureFavBait: Pebble Cupcake

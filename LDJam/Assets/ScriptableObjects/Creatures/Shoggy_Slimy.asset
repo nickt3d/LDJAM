@@ -23,3 +23,4 @@ MonoBehaviour:
   creatureDescription: Exposure to slime has drastically decreased its swimming speed.
     Everywhere it does, it leaves a slippery trail.
   creatureImage: {fileID: 21300000, guid: 46f85aa1546929f47904ce522b81d806, type: 3}
+  creatureFavBait: Dewdrop Cupcake

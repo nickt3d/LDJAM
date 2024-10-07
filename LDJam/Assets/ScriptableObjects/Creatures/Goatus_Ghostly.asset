@@ -23,3 +23,4 @@ MonoBehaviour:
   creatureDescription: It has a special ability to sense the life force of others.
     It will let out a cry if something feels off.
   creatureImage: {fileID: 21300000, guid: 52c739b7cb99e5c4895f83fa9bb8a957, type: 3}
+  creatureFavBait: Pebble Cupcake

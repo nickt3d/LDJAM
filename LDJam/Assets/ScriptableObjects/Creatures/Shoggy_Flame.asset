@@ -23,3 +23,4 @@ MonoBehaviour:
   creatureDescription: To cool off, it swims in pools of lava. It only comes out
     of the lava to gather food in the surrounding area.
   creatureImage: {fileID: 21300000, guid: 4bd56547dc20fb94fb6356b5083f7df0, type: 3}
+  creatureFavBait: Dewdrop Cupcake

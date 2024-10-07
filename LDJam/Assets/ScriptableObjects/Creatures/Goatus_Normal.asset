@@ -23,3 +23,4 @@ MonoBehaviour:
   creatureDescription: It loves roaming around and grazing n the grass. It used to
     be a mode of transportation for climbing mountains due to its strong legs.
   creatureImage: {fileID: 21300000, guid: 37666b0f708170f45acd472fa8036d63, type: 3}
+  creatureFavBait: Pebble Cupcake

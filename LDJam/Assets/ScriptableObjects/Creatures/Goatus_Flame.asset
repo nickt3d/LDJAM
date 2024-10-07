@@ -23,3 +23,4 @@ MonoBehaviour:
   creatureDescription: It rams with a fiery charge leaving burning trails wherever
     it goes. It's temper is very eratic and it doesn't know how to calm down.
   creatureImage: {fileID: 21300000, guid: da25b15b5283aac4e9e1988a31fc4606, type: 3}
+  creatureFavBait: Pebble Cupcake

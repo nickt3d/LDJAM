@@ -17,6 +17,7 @@ public class CreatureData : ScriptableObject
     public GameObject Model;
     public string creatureDescription;
     public Sprite creatureImage;
+    public string creatureFavBait;
 }
 
 [Serializable]

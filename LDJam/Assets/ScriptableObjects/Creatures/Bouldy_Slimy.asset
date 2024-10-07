@@ -23,3 +23,4 @@ MonoBehaviour:
   creatureDescription: Its body is covered in a slimey liquid allowing it to squeeze
     through caves very easily.
   creatureImage: {fileID: 21300000, guid: d1de14e961f3d0048b9b830678c3d9d0, type: 3}
+  creatureFavBait: Pebble Cupcake

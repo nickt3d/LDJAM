@@ -23,3 +23,4 @@ MonoBehaviour:
   creatureDescription: Long exposure to hot rocks caused it's body temperature to
     spike. Coming into contact with it can cause severe burns.
   creatureImage: {fileID: 21300000, guid: 2bba55ecce3e67b468e2b4784d16bc20, type: 3}
+  creatureFavBait: Pebble Cupcake
