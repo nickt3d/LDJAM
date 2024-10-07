@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.UI;
 
 
 public class Munchkinpedia : MonoBehaviour
-{  
+{
     public Action OnMenuClose;
 
     private void _onCloseClicked()
@@ -20,6 +21,6 @@ public class Munchkinpedia : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Q))
         {
             _onCloseClicked();
-        }    
+        }
     }
 }

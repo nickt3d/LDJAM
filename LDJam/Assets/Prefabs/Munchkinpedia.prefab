@@ -3687,6 +3687,51 @@ PrefabInstance:
       propertyPath: m_Name
       value: MunchkinEntry (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_Interactable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: -4340768047809606186}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: EnableEntry
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Munchkinpedia, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
       propertyPath: favBait
@@ -3736,7 +3781,7 @@ PrefabInstance:
     - target: {fileID: 9108350525273621517, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
       propertyPath: m_text
-      value: Shoggy
+      value: Shoggy Slimy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3864,6 +3909,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
+      propertyPath: m_Interactable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -3874,12 +3924,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 6225838507879729338}
     - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: -4340768047809606186}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
@@ -3889,12 +3954,32 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: EnableEntry
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: MuchkinpediaDisplay, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Munchkinpedia, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
@@ -4086,6 +4171,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
+      propertyPath: m_Interactable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -4096,12 +4186,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 6234833242094071435}
     - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: -4340768047809606186}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
@@ -4111,12 +4216,32 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: EnableEntry
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: MuchkinpediaDisplay, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Munchkinpedia, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
@@ -4165,10 +4290,35 @@ PrefabInstance:
       propertyPath: descriptionText
       value: 
       objectReference: {fileID: 900583968246391790}
+    - target: {fileID: 8550966304698332949, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 351.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 8550966304698332949, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 54
+      objectReference: {fileID: 0}
+    - target: {fileID: 8550966304698332949, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 203.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 8550966304698332949, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -27
+      objectReference: {fileID: 0}
     - target: {fileID: 9108350525273621517, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
       propertyPath: m_text
-      value: Bouldy
+      value: Bouldy Flame
+      objectReference: {fileID: 0}
+    - target: {fileID: 9108350525273621517, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 47
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4306,6 +4456,51 @@ PrefabInstance:
       propertyPath: m_Name
       value: MunchkinEntry (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_Interactable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: -4340768047809606186}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: EnableEntry
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Munchkinpedia, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
       propertyPath: favBait
@@ -4355,7 +4550,7 @@ PrefabInstance:
     - target: {fileID: 9108350525273621517, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
       propertyPath: m_text
-      value: Shoggy
+      value: Shoggy Ghostly
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4483,6 +4678,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
+      propertyPath: m_Interactable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -4493,12 +4693,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 4705637515101373765}
     - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: -4340768047809606186}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
@@ -4508,12 +4723,32 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: EnableEntry
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: MuchkinpediaDisplay, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Munchkinpedia, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
@@ -4565,7 +4800,7 @@ PrefabInstance:
     - target: {fileID: 9108350525273621517, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
       propertyPath: m_text
-      value: Bouldy
+      value: Bouldy Slimy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4703,6 +4938,51 @@ PrefabInstance:
       propertyPath: m_Name
       value: MunchkinEntry (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_Interactable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: -4340768047809606186}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: EnableEntry
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Munchkinpedia, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
       propertyPath: favBait
@@ -4752,7 +5032,7 @@ PrefabInstance:
     - target: {fileID: 9108350525273621517, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
       propertyPath: m_text
-      value: Shoggy
+      value: Shoggy Flame
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4880,6 +5160,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
+      propertyPath: m_Interactable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -4890,12 +5175,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 5529085973711991225}
     - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: -4340768047809606186}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
@@ -4905,8 +5205,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: EnableEntry
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: MuchkinpediaDisplay, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Munchkinpedia, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
@@ -4915,7 +5225,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
@@ -5101,6 +5421,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
+      propertyPath: m_Interactable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -5111,12 +5436,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 3941546542392596487}
     - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: -4340768047809606186}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
@@ -5126,12 +5466,32 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: EnableEntry
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: MuchkinpediaDisplay, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Munchkinpedia, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
@@ -5183,7 +5543,7 @@ PrefabInstance:
     - target: {fileID: 9108350525273621517, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
       propertyPath: m_text
-      value: Ghebble
+      value: Ghebble Ghostly
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5321,6 +5681,51 @@ PrefabInstance:
       propertyPath: m_Name
       value: MunchkinEntry (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_Interactable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: -4340768047809606186}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: EnableEntry
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Munchkinpedia, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
       propertyPath: favBait
@@ -5370,7 +5775,7 @@ PrefabInstance:
     - target: {fileID: 9108350525273621517, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
       propertyPath: m_text
-      value: Goatus
+      value: Goatus Slimy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5498,6 +5903,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
+      propertyPath: m_Interactable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -5508,12 +5918,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 4479409287558214295}
     - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: -4340768047809606186}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
@@ -5523,12 +5948,32 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: EnableEntry
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: MuchkinpediaDisplay, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Munchkinpedia, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
@@ -5580,7 +6025,7 @@ PrefabInstance:
     - target: {fileID: 9108350525273621517, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
       propertyPath: m_text
-      value: Ghebble
+      value: Ghebble Slimy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5720,6 +6165,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
+      propertyPath: m_Interactable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -5730,12 +6180,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2816826966941824163}
     - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: -4340768047809606186}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
@@ -5745,12 +6210,32 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: EnableEntry
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: MuchkinpediaDisplay, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Munchkinpedia, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
@@ -5802,7 +6287,7 @@ PrefabInstance:
     - target: {fileID: 9108350525273621517, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
       propertyPath: m_text
-      value: Bouldy
+      value: Bouldy Ghostly
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5940,6 +6425,51 @@ PrefabInstance:
       propertyPath: m_Name
       value: MunchkinEntry (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_Interactable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: -4340768047809606186}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: EnableEntry
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Munchkinpedia, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
       propertyPath: favBait
@@ -5989,7 +6519,7 @@ PrefabInstance:
     - target: {fileID: 9108350525273621517, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
       propertyPath: m_text
-      value: Goatus
+      value: Goatus Ghostly
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6117,6 +6647,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
+      propertyPath: m_Interactable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -6127,12 +6662,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1461268811626214639}
     - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: -4340768047809606186}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
@@ -6142,12 +6692,32 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: EnableEntry
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: MuchkinpediaDisplay, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Munchkinpedia, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
@@ -6199,7 +6769,7 @@ PrefabInstance:
     - target: {fileID: 9108350525273621517, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
       propertyPath: m_text
-      value: Ghebble
+      value: Ghebble Flame
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6336,6 +6906,51 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MunchkinEntry (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_Interactable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: -4340768047809606186}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: EnableEntry
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Munchkinpedia, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
@@ -6512,6 +7127,51 @@ PrefabInstance:
       propertyPath: m_Name
       value: MunchkinEntry (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_Interactable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: -4340768047809606186}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: EnableEntry
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Munchkinpedia, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
       propertyPath: favBait
@@ -6561,7 +7221,7 @@ PrefabInstance:
     - target: {fileID: 9108350525273621517, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
       propertyPath: m_text
-      value: Goatus
+      value: Goatus Flame
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6689,6 +7349,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
+      propertyPath: m_Interactable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -6699,12 +7364,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 623083974647837307}
     - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: -4340768047809606186}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
@@ -6714,12 +7394,32 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: EnableEntry
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: MuchkinpediaDisplay, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Munchkinpedia, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
