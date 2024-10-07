@@ -12,9 +12,8 @@ public class Player : MonoBehaviour
     
     public Dictionary<BaitType, int> BaitInventory => _baitInventory;
     public List<CreatureData> TamedCreatures => _tamedCreatureTypes;
-
-    //TODO: change back to 30
-    public const float NORMAL_CATCH_RATE = 100;
+    
+    public const float NORMAL_CATCH_RATE = 30;
     public const float TYPE_CATCH_RATE = 70;
 
     private void Awake()
@@ -40,6 +39,15 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E) && !UIManager.Instance.IsMenuOpen())
         {
             _interact();
+        }
+
+        if (BaitInventory[BaitType.Normal] < 1
+            && BaitInventory[BaitType.Blubber] < 1
+            && BaitInventory[BaitType.Stoney] < 1
+            && BaitInventory[BaitType.Trunko] < 1
+            && TamedCreatures.Count < 1)
+        {
+            BaitInventory[BaitType.Normal] += 10;
         }
     }
 

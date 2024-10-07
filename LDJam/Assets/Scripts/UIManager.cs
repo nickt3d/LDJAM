@@ -34,6 +34,8 @@ public class UIManager : MonoBehaviour
     private void Start()
     {
         _starterAssetsInputs = FindObjectOfType<StarterAssetsInputs>();
+        
+        _onMenuClose();
     }
     
     private void Update()

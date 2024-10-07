@@ -51172,7 +51172,7 @@ PrefabInstance:
     - target: {fileID: 5820374263315936176, guid: a0677b8c871335e40a35898a842d7487,
         type: 3}
       propertyPath: _baseBreedingTime
-      value: 5
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 6192272796161710676, guid: a0677b8c871335e40a35898a842d7487,
         type: 3}
