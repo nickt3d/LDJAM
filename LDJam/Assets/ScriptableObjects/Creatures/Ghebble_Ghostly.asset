@@ -19,7 +19,7 @@ MonoBehaviour:
   TamingReward:
     PossibleBaitDrops: 03000000
     AmountRange: {x: 2, y: 4}
-  Model: {fileID: 7319063001501853309, guid: e3e14c821a3b5f049ae7db721c9ae42a, type: 3}
+  Model: {fileID: 454218516200104786, guid: f18ce3bab614fdf499ba24b092e6fefa, type: 3}
   creatureDescription: During the night, it haunts any unsuspecting prey, fueling
     itself with every scare it causes.
   creatureImage: {fileID: 21300000, guid: ede482d805148da4f8aea0f05fdeef94, type: 3}
