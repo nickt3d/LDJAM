@@ -5,7 +5,7 @@ using System;
 
 
 public class Munchkinpedia : MonoBehaviour
-{
+{  
     public Action OnMenuClose;
 
     private void _onCloseClicked()

@@ -147,6 +147,7 @@ GameObject:
   - component: {fileID: 5638281516683478853}
   - component: {fileID: 5663789313324747950}
   - component: {fileID: 6949550155510422447}
+  - component: {fileID: 8453434038961723463}
   m_Layer: 5
   m_Name: MunchkinEntry
   m_TagString: Untagged
@@ -255,4 +256,35 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5663789313324747950}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8453434038961723463}
+        m_TargetAssemblyTypeName: MuchkinpediaDisplay, Assembly-CSharp
+        m_MethodName: DisplayInformation
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &8453434038961723463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6759300164304837652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccad9eef92cd0a14495954bf139fed13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  munchkin: {fileID: 11400000, guid: 84aa28aa39e09b844954cea40d738900, type: 2}
+  nameText: {fileID: 0}
+  descriptionText: {fileID: 0}
+  munchkinImage: {fileID: 0}
+  favBait: {fileID: 0}
+  baseType: {fileID: 0}
+  subType: {fileID: 0}

@@ -3687,6 +3687,52 @@ PrefabInstance:
       propertyPath: m_Name
       value: MunchkinEntry (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: favBait
+      value: 
+      objectReference: {fileID: 1813161064141060109}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: subType
+      value: 
+      objectReference: {fileID: 3439471339142755644}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: baseType
+      value: 
+      objectReference: {fileID: 117959317640389630}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: munchkin
+      value: 
+      objectReference: {fileID: 11400000, guid: 2d77bd59a0bbfb44dbde05886bd8ac64,
+        type: 2}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: nameText
+      value: 
+      objectReference: {fileID: 7388032531626613439}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: baitTitle
+      value: 
+      objectReference: {fileID: 7483338201195761889}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: munchkinImage
+      value: 
+      objectReference: {fileID: 2236660330037413137}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: baitExampleText
+      value: 
+      objectReference: {fileID: 2618562197327101229}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: descriptionText
+      value: 
+      objectReference: {fileID: 900583968246391790}
     - target: {fileID: 9108350525273621517, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
       propertyPath: m_text
@@ -3816,6 +3862,87 @@ PrefabInstance:
       propertyPath: m_Name
       value: MunchkinEntry (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6225838507879729338}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: DisplayInformation
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MuchkinpediaDisplay, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: favBait
+      value: 
+      objectReference: {fileID: 1813161064141060109}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: subType
+      value: 
+      objectReference: {fileID: 3439471339142755644}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: baseType
+      value: 
+      objectReference: {fileID: 117959317640389630}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: munchkin
+      value: 
+      objectReference: {fileID: 11400000, guid: 65d4cb331adefec4a934aa04fd03519c,
+        type: 2}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: nameText
+      value: 
+      objectReference: {fileID: 7388032531626613439}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: baitTitle
+      value: 
+      objectReference: {fileID: 7483338201195761889}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: munchkinImage
+      value: 
+      objectReference: {fileID: 2236660330037413137}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: baitExampleText
+      value: 
+      objectReference: {fileID: 2618562197327101229}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: descriptionText
+      value: 
+      objectReference: {fileID: 900583968246391790}
     - target: {fileID: 9108350525273621517, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
       propertyPath: m_text
@@ -3826,6 +3953,18 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41b53ec57ff9f7146bbe1fcf48abdec1, type: 3}
+--- !u!114 &6225838507879729338 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+    type: 3}
+  m_PrefabInstance: {fileID: 2537284002572456189}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccad9eef92cd0a14495954bf139fed13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &7269698294408830840 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5176067873094537093, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
@@ -3945,6 +4084,87 @@ PrefabInstance:
       propertyPath: m_Name
       value: MunchkinEntry (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6234833242094071435}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: DisplayInformation
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MuchkinpediaDisplay, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: favBait
+      value: 
+      objectReference: {fileID: 1813161064141060109}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: subType
+      value: 
+      objectReference: {fileID: 3439471339142755644}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: baseType
+      value: 
+      objectReference: {fileID: 117959317640389630}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: munchkin
+      value: 
+      objectReference: {fileID: 11400000, guid: 27ceac58b82b5574c8bb505d10b73472,
+        type: 2}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: nameText
+      value: 
+      objectReference: {fileID: 7388032531626613439}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: baitTitle
+      value: 
+      objectReference: {fileID: 7483338201195761889}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: munchkinImage
+      value: 
+      objectReference: {fileID: 2236660330037413137}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: baitExampleText
+      value: 
+      objectReference: {fileID: 2618562197327101229}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: descriptionText
+      value: 
+      objectReference: {fileID: 900583968246391790}
     - target: {fileID: 9108350525273621517, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
       propertyPath: m_text
@@ -3955,6 +4175,18 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41b53ec57ff9f7146bbe1fcf48abdec1, type: 3}
+--- !u!114 &6234833242094071435 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+    type: 3}
+  m_PrefabInstance: {fileID: 2582307188044347084}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccad9eef92cd0a14495954bf139fed13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &7206644488260729161 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5176067873094537093, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
@@ -4074,6 +4306,52 @@ PrefabInstance:
       propertyPath: m_Name
       value: MunchkinEntry (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: favBait
+      value: 
+      objectReference: {fileID: 1813161064141060109}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: subType
+      value: 
+      objectReference: {fileID: 3439471339142755644}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: baseType
+      value: 
+      objectReference: {fileID: 117959317640389630}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: munchkin
+      value: 
+      objectReference: {fileID: 11400000, guid: ecb1c8b49088b0e47aeb8c42702ed898,
+        type: 2}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: nameText
+      value: 
+      objectReference: {fileID: 7388032531626613439}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: baitTitle
+      value: 
+      objectReference: {fileID: 7483338201195761889}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: munchkinImage
+      value: 
+      objectReference: {fileID: 2236660330037413137}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: baitExampleText
+      value: 
+      objectReference: {fileID: 2618562197327101229}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: descriptionText
+      value: 
+      objectReference: {fileID: 900583968246391790}
     - target: {fileID: 9108350525273621517, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
       propertyPath: m_text
@@ -4203,6 +4481,87 @@ PrefabInstance:
       propertyPath: m_Name
       value: MunchkinEntry (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 4705637515101373765}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: DisplayInformation
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MuchkinpediaDisplay, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: favBait
+      value: 
+      objectReference: {fileID: 1813161064141060109}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: subType
+      value: 
+      objectReference: {fileID: 3439471339142755644}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: baseType
+      value: 
+      objectReference: {fileID: 117959317640389630}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: munchkin
+      value: 
+      objectReference: {fileID: 11400000, guid: eeee6bb4c0b2ba444bf266e264276898,
+        type: 2}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: nameText
+      value: 
+      objectReference: {fileID: 7388032531626613439}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: baitTitle
+      value: 
+      objectReference: {fileID: 7483338201195761889}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: munchkinImage
+      value: 
+      objectReference: {fileID: 2236660330037413137}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: baitExampleText
+      value: 
+      objectReference: {fileID: 2618562197327101229}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: descriptionText
+      value: 
+      objectReference: {fileID: 900583968246391790}
     - target: {fileID: 9108350525273621517, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
       propertyPath: m_text
@@ -4213,6 +4572,18 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41b53ec57ff9f7146bbe1fcf48abdec1, type: 3}
+--- !u!114 &4705637515101373765 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+    type: 3}
+  m_PrefabInstance: {fileID: 3755273229281582338}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccad9eef92cd0a14495954bf139fed13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &8343058314577334919 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5176067873094537093, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
@@ -4332,6 +4703,52 @@ PrefabInstance:
       propertyPath: m_Name
       value: MunchkinEntry (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: favBait
+      value: 
+      objectReference: {fileID: 1813161064141060109}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: subType
+      value: 
+      objectReference: {fileID: 3439471339142755644}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: baseType
+      value: 
+      objectReference: {fileID: 117959317640389630}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: munchkin
+      value: 
+      objectReference: {fileID: 11400000, guid: 4d3635ce57d46bb459ab3dba03e91122,
+        type: 2}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: nameText
+      value: 
+      objectReference: {fileID: 7388032531626613439}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: baitTitle
+      value: 
+      objectReference: {fileID: 7483338201195761889}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: munchkinImage
+      value: 
+      objectReference: {fileID: 2236660330037413137}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: baitExampleText
+      value: 
+      objectReference: {fileID: 2618562197327101229}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: descriptionText
+      value: 
+      objectReference: {fileID: 900583968246391790}
     - target: {fileID: 9108350525273621517, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
       propertyPath: m_text
@@ -4501,6 +4918,46 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: favBait
+      value: 
+      objectReference: {fileID: 1813161064141060109}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: subType
+      value: 
+      objectReference: {fileID: 3439471339142755644}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: baseType
+      value: 
+      objectReference: {fileID: 117959317640389630}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: nameText
+      value: 
+      objectReference: {fileID: 7388032531626613439}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: baitTitle
+      value: 
+      objectReference: {fileID: 7483338201195761889}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: munchkinImage
+      value: 
+      objectReference: {fileID: 2236660330037413137}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: baitExampleText
+      value: 
+      objectReference: {fileID: 2618562197327101229}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: descriptionText
+      value: 
+      objectReference: {fileID: 900583968246391790}
     - target: {fileID: 9108350525273621517, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
       propertyPath: m_text
@@ -4509,37 +4966,20 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6759300164304837652, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 5529085973711991225}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41b53ec57ff9f7146bbe1fcf48abdec1, type: 3}
---- !u!1 &7216517788260759018 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6759300164304837652, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+--- !u!114 &5529085973711991225 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
     type: 3}
   m_PrefabInstance: {fileID: 4173679199610006014}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &5529085973711991225
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7216517788260759018}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ccad9eef92cd0a14495954bf139fed13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  munchkin: {fileID: 11400000, guid: 84aa28aa39e09b844954cea40d738900, type: 2}
-  nameText: {fileID: 7388032531626613439}
-  descriptionText: {fileID: 900583968246391790}
-  munchkinImage: {fileID: 2236660330037413137}
-  favBait: {fileID: 1813161064141060109}
-  baseType: {fileID: 117959317640389630}
-  subType: {fileID: 3439471339142755644}
 --- !u!224 &9096978021518960251 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5176067873094537093, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
@@ -4659,6 +5099,87 @@ PrefabInstance:
       propertyPath: m_Name
       value: MunchkinEntry (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 3941546542392596487}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: DisplayInformation
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MuchkinpediaDisplay, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: favBait
+      value: 
+      objectReference: {fileID: 1813161064141060109}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: subType
+      value: 
+      objectReference: {fileID: 3439471339142755644}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: baseType
+      value: 
+      objectReference: {fileID: 117959317640389630}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: munchkin
+      value: 
+      objectReference: {fileID: 11400000, guid: 713f32f58a5385f4e8dc746ced7912ce,
+        type: 2}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: nameText
+      value: 
+      objectReference: {fileID: 7388032531626613439}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: baitTitle
+      value: 
+      objectReference: {fileID: 7483338201195761889}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: munchkinImage
+      value: 
+      objectReference: {fileID: 2236660330037413137}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: baitExampleText
+      value: 
+      objectReference: {fileID: 2618562197327101229}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: descriptionText
+      value: 
+      objectReference: {fileID: 900583968246391790}
     - target: {fileID: 9108350525273621517, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
       propertyPath: m_text
@@ -4675,6 +5196,18 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 4891910618832470080}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &3941546542392596487 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+    type: 3}
+  m_PrefabInstance: {fileID: 4891910618832470080}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccad9eef92cd0a14495954bf139fed13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &5031030666184762786
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4788,6 +5321,52 @@ PrefabInstance:
       propertyPath: m_Name
       value: MunchkinEntry (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: favBait
+      value: 
+      objectReference: {fileID: 1813161064141060109}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: subType
+      value: 
+      objectReference: {fileID: 3439471339142755644}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: baseType
+      value: 
+      objectReference: {fileID: 117959317640389630}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: munchkin
+      value: 
+      objectReference: {fileID: 11400000, guid: 1badd418a9847b44299b8af48378f6d2,
+        type: 2}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: nameText
+      value: 
+      objectReference: {fileID: 7388032531626613439}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: baitTitle
+      value: 
+      objectReference: {fileID: 7483338201195761889}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: munchkinImage
+      value: 
+      objectReference: {fileID: 2236660330037413137}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: baitExampleText
+      value: 
+      objectReference: {fileID: 2618562197327101229}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: descriptionText
+      value: 
+      objectReference: {fileID: 900583968246391790}
     - target: {fileID: 9108350525273621517, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
       propertyPath: m_text
@@ -4917,6 +5496,87 @@ PrefabInstance:
       propertyPath: m_Name
       value: MunchkinEntry (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 4479409287558214295}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: DisplayInformation
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MuchkinpediaDisplay, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: favBait
+      value: 
+      objectReference: {fileID: 1813161064141060109}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: subType
+      value: 
+      objectReference: {fileID: 3439471339142755644}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: baseType
+      value: 
+      objectReference: {fileID: 117959317640389630}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: munchkin
+      value: 
+      objectReference: {fileID: 11400000, guid: 40bf8e99426c6a5448c299cf7d7c4244,
+        type: 2}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: nameText
+      value: 
+      objectReference: {fileID: 7388032531626613439}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: baitTitle
+      value: 
+      objectReference: {fileID: 7483338201195761889}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: munchkinImage
+      value: 
+      objectReference: {fileID: 2236660330037413137}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: baitExampleText
+      value: 
+      objectReference: {fileID: 2618562197327101229}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: descriptionText
+      value: 
+      objectReference: {fileID: 900583968246391790}
     - target: {fileID: 9108350525273621517, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
       propertyPath: m_text
@@ -4933,6 +5593,18 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 5438851347551906512}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &4479409287558214295 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+    type: 3}
+  m_PrefabInstance: {fileID: 5438851347551906512}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccad9eef92cd0a14495954bf139fed13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &5928918865610058980
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5046,6 +5718,87 @@ PrefabInstance:
       propertyPath: m_Name
       value: MunchkinEntry (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2816826966941824163}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: DisplayInformation
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MuchkinpediaDisplay, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: favBait
+      value: 
+      objectReference: {fileID: 1813161064141060109}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: subType
+      value: 
+      objectReference: {fileID: 3439471339142755644}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: baseType
+      value: 
+      objectReference: {fileID: 117959317640389630}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: munchkin
+      value: 
+      objectReference: {fileID: 11400000, guid: 459a65ac4e082a741bd580dc12c78abf,
+        type: 2}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: nameText
+      value: 
+      objectReference: {fileID: 7388032531626613439}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: baitTitle
+      value: 
+      objectReference: {fileID: 7483338201195761889}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: munchkinImage
+      value: 
+      objectReference: {fileID: 2236660330037413137}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: baitExampleText
+      value: 
+      objectReference: {fileID: 2618562197327101229}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: descriptionText
+      value: 
+      objectReference: {fileID: 900583968246391790}
     - target: {fileID: 9108350525273621517, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
       propertyPath: m_text
@@ -5062,6 +5815,18 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 5928918865610058980}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2816826966941824163 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+    type: 3}
+  m_PrefabInstance: {fileID: 5928918865610058980}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccad9eef92cd0a14495954bf139fed13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6983043371969736490
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5175,6 +5940,52 @@ PrefabInstance:
       propertyPath: m_Name
       value: MunchkinEntry (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: favBait
+      value: 
+      objectReference: {fileID: 1813161064141060109}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: subType
+      value: 
+      objectReference: {fileID: 3439471339142755644}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: baseType
+      value: 
+      objectReference: {fileID: 117959317640389630}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: munchkin
+      value: 
+      objectReference: {fileID: 11400000, guid: 54784d3070ed99044b34caee1eb23e71,
+        type: 2}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: nameText
+      value: 
+      objectReference: {fileID: 7388032531626613439}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: baitTitle
+      value: 
+      objectReference: {fileID: 7483338201195761889}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: munchkinImage
+      value: 
+      objectReference: {fileID: 2236660330037413137}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: baitExampleText
+      value: 
+      objectReference: {fileID: 2618562197327101229}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: descriptionText
+      value: 
+      objectReference: {fileID: 900583968246391790}
     - target: {fileID: 9108350525273621517, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
       propertyPath: m_text
@@ -5304,6 +6115,87 @@ PrefabInstance:
       propertyPath: m_Name
       value: MunchkinEntry (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1461268811626214639}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: DisplayInformation
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MuchkinpediaDisplay, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: favBait
+      value: 
+      objectReference: {fileID: 1813161064141060109}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: subType
+      value: 
+      objectReference: {fileID: 3439471339142755644}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: baseType
+      value: 
+      objectReference: {fileID: 117959317640389630}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: munchkin
+      value: 
+      objectReference: {fileID: 11400000, guid: fe44c359b4c167446a1897d4e6238ba4,
+        type: 2}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: nameText
+      value: 
+      objectReference: {fileID: 7388032531626613439}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: baitTitle
+      value: 
+      objectReference: {fileID: 7483338201195761889}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: munchkinImage
+      value: 
+      objectReference: {fileID: 2236660330037413137}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: baitExampleText
+      value: 
+      objectReference: {fileID: 2618562197327101229}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: descriptionText
+      value: 
+      objectReference: {fileID: 900583968246391790}
     - target: {fileID: 9108350525273621517, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
       propertyPath: m_text
@@ -5314,6 +6206,18 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41b53ec57ff9f7146bbe1fcf48abdec1, type: 3}
+--- !u!114 &1461268811626214639 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+    type: 3}
+  m_PrefabInstance: {fileID: 6996299439049813160}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccad9eef92cd0a14495954bf139fed13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &2793022369030513453 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5176067873094537093, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
@@ -5433,6 +6337,52 @@ PrefabInstance:
       propertyPath: m_Name
       value: MunchkinEntry (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: favBait
+      value: 
+      objectReference: {fileID: 1813161064141060109}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: subType
+      value: 
+      objectReference: {fileID: 3439471339142755644}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: baseType
+      value: 
+      objectReference: {fileID: 117959317640389630}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: munchkin
+      value: 
+      objectReference: {fileID: 11400000, guid: 82ed6196c97b83545b643226e721b538,
+        type: 2}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: nameText
+      value: 
+      objectReference: {fileID: 7388032531626613439}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: baitTitle
+      value: 
+      objectReference: {fileID: 7483338201195761889}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: munchkinImage
+      value: 
+      objectReference: {fileID: 2236660330037413137}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: baitExampleText
+      value: 
+      objectReference: {fileID: 2618562197327101229}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: descriptionText
+      value: 
+      objectReference: {fileID: 900583968246391790}
     - target: {fileID: 9108350525273621517, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
       propertyPath: m_text
@@ -5562,6 +6512,52 @@ PrefabInstance:
       propertyPath: m_Name
       value: MunchkinEntry (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: favBait
+      value: 
+      objectReference: {fileID: 1813161064141060109}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: subType
+      value: 
+      objectReference: {fileID: 3439471339142755644}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: baseType
+      value: 
+      objectReference: {fileID: 117959317640389630}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: munchkin
+      value: 
+      objectReference: {fileID: 11400000, guid: 5219354c927ede94abdf7c17095e928d,
+        type: 2}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: nameText
+      value: 
+      objectReference: {fileID: 7388032531626613439}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: baitTitle
+      value: 
+      objectReference: {fileID: 7483338201195761889}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: munchkinImage
+      value: 
+      objectReference: {fileID: 2236660330037413137}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: baitExampleText
+      value: 
+      objectReference: {fileID: 2618562197327101229}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: descriptionText
+      value: 
+      objectReference: {fileID: 900583968246391790}
     - target: {fileID: 9108350525273621517, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
       propertyPath: m_text
@@ -5691,6 +6687,87 @@ PrefabInstance:
       propertyPath: m_Name
       value: MunchkinEntry (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 623083974647837307}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: DisplayInformation
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MuchkinpediaDisplay, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949550155510422447, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: favBait
+      value: 
+      objectReference: {fileID: 1813161064141060109}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: subType
+      value: 
+      objectReference: {fileID: 3439471339142755644}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: baseType
+      value: 
+      objectReference: {fileID: 117959317640389630}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: munchkin
+      value: 
+      objectReference: {fileID: 11400000, guid: 1a95b285aa1967248b54aa1c746cdff1,
+        type: 2}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: nameText
+      value: 
+      objectReference: {fileID: 7388032531626613439}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: baitTitle
+      value: 
+      objectReference: {fileID: 7483338201195761889}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: munchkinImage
+      value: 
+      objectReference: {fileID: 2236660330037413137}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: baitExampleText
+      value: 
+      objectReference: {fileID: 2618562197327101229}
+    - target: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+        type: 3}
+      propertyPath: descriptionText
+      value: 
+      objectReference: {fileID: 900583968246391790}
     - target: {fileID: 9108350525273621517, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
         type: 3}
       propertyPath: m_text
@@ -5701,6 +6778,18 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41b53ec57ff9f7146bbe1fcf48abdec1, type: 3}
+--- !u!114 &623083974647837307 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8453434038961723463, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,
+    type: 3}
+  m_PrefabInstance: {fileID: 9076163831278676540}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccad9eef92cd0a14495954bf139fed13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &4188370351341807033 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5176067873094537093, guid: 41b53ec57ff9f7146bbe1fcf48abdec1,

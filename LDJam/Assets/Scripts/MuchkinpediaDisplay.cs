@@ -14,15 +14,21 @@ public class MuchkinpediaDisplay : MonoBehaviour
     [SerializeField] public TMP_Text favBait;
     [SerializeField] public TMP_Text baseType;
     [SerializeField] public TMP_Text subType;
+    [SerializeField] public TMP_Text baitTitle;
+    [SerializeField] public TMP_Text baitExampleText;
 
     private void Start()
     {
         munchkinImage.gameObject.SetActive(false);
+        baitTitle.gameObject.SetActive(false);
+        baitExampleText.gameObject.SetActive(false);
     }
 
     public void DisplayInformation()
     {
         munchkinImage.gameObject.SetActive(true);
+        baitTitle.gameObject.SetActive(true);
+        baitExampleText.gameObject.SetActive(true);
 
         nameText.text = munchkin.CreatureName.ToString();
         descriptionText.text = munchkin.creatureDescription;
