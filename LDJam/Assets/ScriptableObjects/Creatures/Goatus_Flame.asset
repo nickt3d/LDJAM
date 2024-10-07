@@ -20,3 +20,6 @@ MonoBehaviour:
     PossibleBaitDrops: 02000000
     AmountRange: {x: 2, y: 4}
   Model: {fileID: 7803840696213403682, guid: 4b2deef88df15eb47aa81af2db59ffff, type: 3}
+  creatureDescription: It rams with a fiery charge leaving burning trails wherever
+    it goes. It's temper is very eratic and it doesn't know how to calm down.
+  creatureImage: {fileID: 21300000, guid: da25b15b5283aac4e9e1988a31fc4606, type: 3}

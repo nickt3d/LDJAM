@@ -20,3 +20,6 @@ MonoBehaviour:
     PossibleBaitDrops: 02000000
     AmountRange: {x: 2, y: 4}
   Model: {fileID: 4125999111385483354, guid: a9e5c5a6c71e1de4aaed1d4b56adbc89, type: 3}
+  creatureDescription: It loves roaming around and grazing n the grass. It used to
+    be a mode of transportation for climbing mountains due to its strong legs.
+  creatureImage: {fileID: 21300000, guid: 37666b0f708170f45acd472fa8036d63, type: 3}

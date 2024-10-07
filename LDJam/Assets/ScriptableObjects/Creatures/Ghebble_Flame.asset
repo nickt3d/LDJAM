@@ -20,3 +20,6 @@ MonoBehaviour:
     PossibleBaitDrops: 03000000
     AmountRange: {x: 2, y: 4}
   Model: {fileID: 4072394837648935158, guid: e0cfe47da83a7a74e9a17b0701112250, type: 3}
+  creatureDescription: Long days in the sun has turned its body hot. It's often mistaken
+    as a candle flame due to its floating ability.
+  creatureImage: {fileID: 21300000, guid: 2b2236d0f62eaa749a26a54ad9780c25, type: 3}

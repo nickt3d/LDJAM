@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
+
 public class Munchkinpedia : MonoBehaviour
 {
     public Action OnMenuClose;

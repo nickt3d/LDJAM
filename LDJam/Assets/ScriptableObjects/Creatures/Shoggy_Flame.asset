@@ -20,3 +20,6 @@ MonoBehaviour:
     PossibleBaitDrops: 01000000
     AmountRange: {x: 2, y: 4}
   Model: {fileID: 4055154682197056002, guid: cfa05e96573feef479cf606a29089c2c, type: 3}
+  creatureDescription: To cool off, it swims in pools of lava. It only comes out
+    of the lava to gather food in the surrounding area.
+  creatureImage: {fileID: 21300000, guid: 4bd56547dc20fb94fb6356b5083f7df0, type: 3}

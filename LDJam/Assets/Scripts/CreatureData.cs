@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
+using UnityEngine.UI;
+using TMPro;
 
 [CreateAssetMenu(fileName = "CreatureData", menuName = "CreatureData")]
 public class CreatureData : ScriptableObject
@@ -13,6 +15,8 @@ public class CreatureData : ScriptableObject
     public BaitType BaitNeeded;
     public TamingReward TamingReward;
     public GameObject Model;
+    public string creatureDescription;
+    public Sprite creatureImage;
 }
 
 [Serializable]

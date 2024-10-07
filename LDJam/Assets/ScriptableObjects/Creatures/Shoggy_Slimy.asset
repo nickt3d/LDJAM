@@ -20,3 +20,6 @@ MonoBehaviour:
     PossibleBaitDrops: 01000000
     AmountRange: {x: 2, y: 4}
   Model: {fileID: 3827411113089345250, guid: ed9002386a1d40247a8a3ff9b2ed2b11, type: 3}
+  creatureDescription: Exposure to slime has drastically decreased its swimming speed.
+    Everywhere it does, it leaves a slippery trail.
+  creatureImage: {fileID: 21300000, guid: 46f85aa1546929f47904ce522b81d806, type: 3}

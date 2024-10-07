@@ -20,3 +20,5 @@ MonoBehaviour:
     PossibleBaitDrops: 03000000
     AmountRange: {x: 2, y: 4}
   Model: {fileID: 4290041661126539072, guid: cb55667d48a6a654db043448eff107eb, type: 3}
+  creatureDescription: 'It loves to play hide and seek - especially the hiding part. '
+  creatureImage: {fileID: 21300000, guid: 749f6c0345a4d6a44b2439da022644f2, type: 3}

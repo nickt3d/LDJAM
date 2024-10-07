@@ -53,12 +53,12 @@ public class UIManager : MonoBehaviour
 
             if (_munchkinpediaUI != null)
             {
-                Destroy(_munchkinpediaUI.gameObject);            
+                Destroy(_munchkinpediaUIInstance.gameObject);            
             }
 
             if (_pauseUI != null)
             {
-                Destroy(_pauseUI.gameObject);
+                Destroy(_pauseUIInstance.gameObject);
             }
         }
 
