@@ -8,8 +8,10 @@ public class Player : MonoBehaviour
     private GameObject _closestInteractable;
     private Base _base;
     private Dictionary<BaitType, int> _baitInventory;
-
+    private List<CreatureData> _tamedCreatureTypes;
+    
     public Dictionary<BaitType, int> BaitInventory => _baitInventory;
+    public List<CreatureData> TamedCreatures => _tamedCreatureTypes;
 
     //TODO: change back to 30
     public const float NORMAL_CATCH_RATE = 100;
@@ -17,7 +19,8 @@ public class Player : MonoBehaviour
 
     private void Awake()
     {
-        _interactablesInRange = new List<GameObject>();
+        _interactablesInRange = new();
+        _tamedCreatureTypes = new();
 
         _base = FindObjectOfType<Base>();
 
@@ -97,6 +100,14 @@ public class Player : MonoBehaviour
         }
     }
 
+    private void TameCreature(CreatureData creature)
+    {
+        if (!_tamedCreatureTypes.Contains(creature))
+        {
+            _tamedCreatureTypes.Add(creature);
+        }
+    }
+
     public void UseBait(Creature creature, BaitType baitType)
     {
         _baitInventory[baitType] -= 1;
@@ -114,6 +125,8 @@ public class Player : MonoBehaviour
                 var randomCount = Random.Range((int)tamingRewards.AmountRange.x, (int)tamingRewards.AmountRange.y + 1);
 
                 _baitInventory[tamingRewards.PossibleBaitDrops[baitDropIndex]] += randomCount;
+
+                TameCreature(creature.CreatureData);
                 print($"Gained {randomCount} {tamingRewards.PossibleBaitDrops[baitDropIndex]} Bait!");
             }
             else
@@ -134,6 +147,8 @@ public class Player : MonoBehaviour
                 var randomCount = Random.Range((int)tamingRewards.AmountRange.x, (int)tamingRewards.AmountRange.y + 1);
 
                 _baitInventory[tamingRewards.PossibleBaitDrops[baitDropIndex]] += randomCount;
+                
+                TameCreature(creature.CreatureData);
                 print($"Gained {randomCount} {tamingRewards.PossibleBaitDrops[baitDropIndex]} Bait!");
             }
             else
