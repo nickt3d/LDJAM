@@ -10,6 +10,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private BreedingUI _breedingUI;
     [SerializeField] private Munchkinpedia _munchkinpediaUI;
     [SerializeField] private PauseUI _pauseUI;
+    [SerializeField] private GameObject munchkinpediaIcon;
     
     public static UIManager Instance { get; private set; }
 
@@ -67,6 +68,7 @@ public class UIManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Q))
         {
             OpenMunchkinpediaUI();
+            munchkinpediaIcon.SetActive(false);
         }
 
         if (Input.GetKeyDown(KeyCode.P))
@@ -149,6 +151,8 @@ public class UIManager : MonoBehaviour
     {
         _munchkinpediaUIInstance.OnMenuClose -= _onMunchkinpediaUIClose;
         _munchkinpediaUIInstance = null;
+
+        munchkinpediaIcon.SetActive(true);
 
         _onMenuClose();
     }
