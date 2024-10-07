@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Unity.Mathematics;
+using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
@@ -14,7 +15,7 @@ public class BreedingPen : MonoBehaviour, IInteractable
     [SerializeField] private Image _progressFill;
     [SerializeField] private GameObject _progressFillBackground;
 
-    private static readonly string CREATURE_FILE_PATH = "Assets/ScriptableObjects/Creatures";
+    private static readonly string CREATURE_FILE_PATH = "Creatures";
 
     public List<Creature> CreaturesInPen => _creaturesInPen;
     
@@ -61,17 +62,13 @@ public class BreedingPen : MonoBehaviour, IInteractable
     private void _breedCreatures()
     {
         List<CreatureData> possibleCreatures = new();
-        var guids = AssetDatabase.FindAssets("", new[] { CREATURE_FILE_PATH });
+        var resources = Resources.LoadAll(CREATURE_FILE_PATH, typeof(CreatureData));
 
-        foreach (string guid in guids)
+        foreach (var resource in resources)
         {
-            string assetPath = AssetDatabase.GUIDToAssetPath(guid);
-            CreatureData asset = AssetDatabase.LoadAssetAtPath<CreatureData>(assetPath);
+            Debug.Log(resource.name);
             
-            if (asset != null)
-            {
-                possibleCreatures.Add(asset);
-            }
+            possibleCreatures.Add((CreatureData)resource);
         }
 
         int randomCreatureChoice = Random.Range(0, 2);
