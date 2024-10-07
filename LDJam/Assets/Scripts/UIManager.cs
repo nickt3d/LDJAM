@@ -51,14 +51,16 @@ public class UIManager : MonoBehaviour
                 _onBreedingUIClose();
             }
 
-            if (_munchkinpediaUI != null)
+            if (_munchkinpediaUIInstance != null)
             {
-                Destroy(_munchkinpediaUIInstance.gameObject);            
+                Destroy(_munchkinpediaUIInstance.gameObject);    
+                _onMunchkinpediaUIClose();
             }
 
-            if (_pauseUI != null)
+            if (_pauseUIInstance != null)
             {
                 Destroy(_pauseUIInstance.gameObject);
+                _onPauseUIClose();
             }
         }
 
@@ -75,7 +77,7 @@ public class UIManager : MonoBehaviour
 
     public void OpenCreatureNameUI(Creature creature)
     {
-        if (_creatureNameUIInstance == null)
+        if (!IsMenuOpen())
         {
             _starterAssetsInputs.SetCursorState(false);
             _starterAssetsInputs.SetCursorInputForLook(false);
@@ -89,7 +91,7 @@ public class UIManager : MonoBehaviour
 
     public void OpenBreedingUI(BreedingPen pen)
     {
-        if (_breedingUIInstance == null)
+        if (!IsMenuOpen())
         {
             _starterAssetsInputs.SetCursorState(false);
             _starterAssetsInputs.SetCursorInputForLook(false);
@@ -103,7 +105,7 @@ public class UIManager : MonoBehaviour
 
     private void OpenMunchkinpediaUI()
     {
-        if (_munchkinpediaUIInstance == null)
+        if (!IsMenuOpen())
         {
             _starterAssetsInputs.SetCursorState(false);
             _starterAssetsInputs.SetCursorInputForLook(false);
@@ -116,7 +118,7 @@ public class UIManager : MonoBehaviour
 
     private void OpenPauseUI()
     {
-        if (_pauseUIInstance == null)
+        if (!IsMenuOpen())
         {
             _starterAssetsInputs.SetCursorState(false);
             _starterAssetsInputs.SetCursorInputForLook(false);
