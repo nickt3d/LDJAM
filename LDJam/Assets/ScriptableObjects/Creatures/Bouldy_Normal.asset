@@ -20,3 +20,7 @@ MonoBehaviour:
     PossibleBaitDrops: 02000000
     AmountRange: {x: 2, y: 4}
   Model: {fileID: 4990859629752971541, guid: 2dd7a35e1873f514b84a64f0faa1708e, type: 3}
+  creatureDescription: Its diet consists of rocks, pebbles or anything that resembles
+    a stone. The rocks that protrude from its body are rough and rigid.
+  creatureImage: {fileID: 21300000, guid: 769adb565545f3a488d9e36219eed122, type: 3}
+  creatureFavBait: Pebble Cupcake

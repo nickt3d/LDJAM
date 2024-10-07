@@ -8,12 +8,16 @@ public class UIManager : MonoBehaviour
 {
     [SerializeField] private CreatureNameUI _creatureNameUI;
     [SerializeField] private BreedingUI _breedingUI;
+    [SerializeField] private Munchkinpedia _munchkinpediaUI;
+    [SerializeField] private PauseUI _pauseUI;
     
     public static UIManager Instance { get; private set; }
 
     private StarterAssetsInputs _starterAssetsInputs;
     private CreatureNameUI _creatureNameUIInstance;
     private BreedingUI _breedingUIInstance;
+    private Munchkinpedia _munchkinpediaUIInstance;
+    private PauseUI _pauseUIInstance;
     
     private void Awake()
     {
@@ -46,12 +50,34 @@ public class UIManager : MonoBehaviour
                 Destroy(_breedingUIInstance.gameObject);
                 _onBreedingUIClose();
             }
+
+            if (_munchkinpediaUIInstance != null)
+            {
+                Destroy(_munchkinpediaUIInstance.gameObject);    
+                _onMunchkinpediaUIClose();
+            }
+
+            if (_pauseUIInstance != null)
+            {
+                Destroy(_pauseUIInstance.gameObject);
+                _onPauseUIClose();
+            }
+        }
+
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            OpenMunchkinpediaUI();
+        }
+
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            OpenPauseUI();
         }
     }
 
     public void OpenCreatureNameUI(Creature creature)
     {
-        if (_creatureNameUIInstance == null)
+        if (!IsMenuOpen())
         {
             _starterAssetsInputs.SetCursorState(false);
             _starterAssetsInputs.SetCursorInputForLook(false);
@@ -65,7 +91,7 @@ public class UIManager : MonoBehaviour
 
     public void OpenBreedingUI(BreedingPen pen)
     {
-        if (_breedingUIInstance == null)
+        if (!IsMenuOpen())
         {
             _starterAssetsInputs.SetCursorState(false);
             _starterAssetsInputs.SetCursorInputForLook(false);
@@ -74,6 +100,32 @@ public class UIManager : MonoBehaviour
             _breedingUIInstance.Init(pen);
 
             _breedingUIInstance.OnMenuClose += _onBreedingUIClose;
+        }
+    }
+
+    private void OpenMunchkinpediaUI()
+    {
+        if (!IsMenuOpen())
+        {
+            _starterAssetsInputs.SetCursorState(false);
+            _starterAssetsInputs.SetCursorInputForLook(false);
+
+            _munchkinpediaUIInstance = Instantiate(_munchkinpediaUI, transform);
+
+            _munchkinpediaUIInstance.OnMenuClose += _onMunchkinpediaUIClose;
+        }
+    }
+
+    private void OpenPauseUI()
+    {
+        if (!IsMenuOpen())
+        {
+            _starterAssetsInputs.SetCursorState(false);
+            _starterAssetsInputs.SetCursorInputForLook(false);
+
+            _pauseUIInstance = Instantiate(_pauseUI, transform);
+
+            _pauseUIInstance.OnMenuClose += _onPauseUIClose;
         }
     }
 
@@ -93,6 +145,22 @@ public class UIManager : MonoBehaviour
         _onMenuClose();
     }
 
+    private void _onMunchkinpediaUIClose()
+    {
+        _munchkinpediaUIInstance.OnMenuClose -= _onMunchkinpediaUIClose;
+        _munchkinpediaUIInstance = null;
+
+        _onMenuClose();
+    }
+
+    private void _onPauseUIClose()
+    {
+        _pauseUIInstance.OnMenuClose -= _onPauseUIClose;
+        _pauseUIInstance = null;
+
+        _onMenuClose();
+    }
+
     private void _onMenuClose()
     {
         _starterAssetsInputs.SetCursorState(true);
@@ -101,6 +169,7 @@ public class UIManager : MonoBehaviour
 
     public bool IsMenuOpen()
     {
-        return _creatureNameUIInstance != null || _breedingUIInstance != null;
+        return _creatureNameUIInstance != null || _breedingUIInstance != null
+            || _munchkinpediaUIInstance != null || _pauseUIInstance != null;
     }
 }

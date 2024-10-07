@@ -17810,6 +17810,10 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7d5cbde109cd19c4b90779872240632f, type: 3}
+  _munchkinpediaUI: {fileID: -4340768047809606186, guid: baec04ad0ef814f48aae143657ae1da6,
+    type: 3}
+  _pauseUI: {fileID: 2701049959657480855, guid: 15653774b6ffe4f41b58be6709244b93,
+    type: 3}
 --- !u!1001 &956008115
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34605,7 +34609,7 @@ MonoBehaviour:
   m_VoxelSize: 0.16666667
   m_MinRegionArea: 2
   m_NavMeshData: {fileID: 23800000, guid: a9eca9d54abce4a4d8a50bd461765763, type: 2}
-  m_BuildHeightMesh: 0
+  m_BuildHeightMesh: 1
 --- !u!114 &1672478604
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43771,6 +43775,12 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 3486432778779574022, guid: 331960d0479c2a3499ac4e385cb84b02,
+    - target: {fileID: 953027657888571836, guid: a0677b8c871335e40a35898a842d7487,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5820374263315936176, guid: a0677b8c871335e40a35898a842d7487,
         type: 3}
       propertyPath: m_Name
       value: Clif_3_(no_grass) (9)
@@ -43886,6 +43896,11 @@ PrefabInstance:
     - target: {fileID: 6192272796161710676, guid: a0677b8c871335e40a35898a842d7487,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6558233797846571779, guid: a0677b8c871335e40a35898a842d7487,
+        type: 3}
+      propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9115681543733940896, guid: a0677b8c871335e40a35898a842d7487,
